@@ -1,13 +1,15 @@
 package com.sg.alma20.postUtility
 
+import android.app.Activity
 import android.content.Context
 import android.content.res.Resources
 import androidx.constraintlayout.widget.ConstraintLayout
+import com.sg.alma20.R
 import com.sg.alma20.model.Post
 import com.sg.alma20.postDrawing.DrawGeneralPost
 import com.sg.alma20.postUtility.Utility
 
-class DrawPostCenter(val contex: Context) {
+class DrawPostCenter(val context: Context) {
 
     val util = Utility()
 
@@ -24,20 +26,34 @@ class DrawPostCenter(val contex: Context) {
 
 
     fun drawPost(post: Post, layout: ConstraintLayout) {
+ //util.logi("DrawPostCenter     =========>  /n post=$post")
+        when (post.lineNum) {
+
+            1 -> draw1Line.drawPost(context, post, layout)
+            2 -> draw2Line.drawPost(context, post, layout)
+            3 -> draw3Line.drawPost(context, post, layout)
+            4 -> draw4Line.drawPost(context, post, layout)
+            5 -> draw5Line.drawPost(context, post, layout)
+            6 -> draw6Line.drawPost(context, post, layout)
+            7 -> draw7Line.drawPost(context, post, layout)
+            8 -> draw8Line.drawPost(context, post, layout)
+            9 -> draw9Line.drawPost(context, post, layout)
+        }
+    }
+    fun drawPostFire(post: Post, layout: ConstraintLayout) {
+       //util.logi("DrawPostCenter 105     =========>       post.lineNum=${post.lineNum}")
 
         when (post.lineNum) {
 
-            1 -> draw1Line.drawPost(contex, post, layout)
-            2 -> draw2Line.drawPost(contex, post, layout)
-            3 -> draw3Line.drawPost(contex, post, layout)
-            4 -> draw4Line.drawPost(contex, post, layout)
-            5 -> draw5Line.drawPost(contex, post, layout)
-            6 -> draw6Line.drawPost(contex, post, layout)
-            7 -> draw7Line.drawPost(contex, post, layout)
-            8 -> draw8Line.drawPost(contex, post, layout)
-            9 -> draw9Line.drawPost(contex, post, layout)
-
+            1 -> draw1Line.drawPostFire(context, post, layout)
+            2 -> draw2Line.drawPostFire(context, post, layout)
+            3 -> draw3Line.drawPostFire(context, post, layout)
+            4 -> draw4Line.drawPostFire(context, post, layout)
+            5 -> draw5Line.drawPostFire(context, post, layout)
+            6 -> draw6Line.drawPostFire(context, post, layout)
+            7 -> draw7Line.drawPostFire(context, post, layout)
+            8 -> draw8Line.drawPostFire(context, post, layout)
+            9 -> draw9Line.drawPostFire(context, post, layout)
         }
-
     }
 }

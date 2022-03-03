@@ -1,10 +1,8 @@
 package com.sg.alma20.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.viewpager2.widget.ViewPager2
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sg.alma20.adapters.PostAdapter
 import com.sg.alma20.databinding.ActivityMainBinding
@@ -25,10 +23,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val posts = downloadAllPost()
-        postAdapter = PostAdapter(this, posts)
-        binding.viewPager2.adapter=postAdapter
 
+         //  -------------------------------enter new post
+       startActivity(Intent(this,AddPostActivity::class.java))
+
+
+
+        //   ---------------------------------    Adapter
+        /*val posts = downloadAllPost()
+        postAdapter = PostAdapter(this, posts)
+        binding.viewPager2.adapter=postAdapter*/
+
+
+
+
+     //   ---------------------------------    RecyclerView
         /*binding.rvPosts.adapter=postAdapter
         val layoutManager=LinearLayoutManager(this)
         binding.rvPosts.layoutManager=layoutManager*/
