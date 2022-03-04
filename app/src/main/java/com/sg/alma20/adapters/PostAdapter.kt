@@ -6,13 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager2.widget.ViewPager2
 import com.sg.alma20.R
 import com.sg.alma20.model.Post
 import com.sg.alma20.postUtility.*
 import java.util.*
 import kotlin.collections.ArrayList
 
-class PostAdapter(context:Context, val posts:ArrayList<Post>): RecyclerView.Adapter<PostAdapter.PagerViewHolder>(){
+//class PostAdapter(context:Context, val posts:ArrayList<Post>): RecyclerView.Adapter<PostAdapter.PagerViewHolder>(){
+class PostAdapter(val viewPager: ViewPager2, context:Context, val posts:ArrayList<Post>): RecyclerView.Adapter<PostAdapter.PagerViewHolder>(){
+
  val drawPost= DrawPostCenter(context)
     val util= Utility()
 
@@ -23,7 +26,22 @@ class PostAdapter(context:Context, val posts:ArrayList<Post>): RecyclerView.Adap
 
     override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
       holder.bindImage(posts[position])
+        //---------------------
+        if (position==posts.size-2){
+            viewPager.post(run)
+        }
+        //------------------
     }
+    //-------------------
+    val run=object :Runnable{
+        override fun run() {
+            posts.addAll(posts)
+            notifyDataSetChanged()
+        }
+
+    }
+
+    //-------------
 
 
     override fun getItemCount()=posts.size
