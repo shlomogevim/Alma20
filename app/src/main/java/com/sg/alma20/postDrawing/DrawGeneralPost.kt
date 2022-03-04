@@ -153,7 +153,7 @@ class DrawGeneralPost() {
     if (post.postTextSize[0] == 0) {
            textView.textSize = post.postTextSize[1].toFloat()
        } else {
-           textView.textSize = post.postTextSize[1].toFloat()
+           textView.textSize = post.postTextSize[index].toFloat()
        }
        val tra = helper.getTransfo(post.postTransparency)
        val shape = GradientDrawable()

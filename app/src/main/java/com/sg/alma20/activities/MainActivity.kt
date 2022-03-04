@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
          //  -------------------------------enter new post
-       startActivity(Intent(this,AddPostActivity::class.java))
+       //startActivity(Intent(this,AddPostActivity::class.java))
 
 
 
         //   ---------------------------------    Adapter
-        /*val posts = downloadAllPost()
+        val posts = downloadAllPost()
         postAdapter = PostAdapter(this, posts)
-        binding.viewPager2.adapter=postAdapter*/
+        binding.viewPager2.adapter=postAdapter
 
 
 
