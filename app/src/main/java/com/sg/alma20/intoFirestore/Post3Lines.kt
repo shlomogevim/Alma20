@@ -16,6 +16,7 @@ class Post3Lines(val context: Context) {
     val drawPost = DrawPostCenter(context)
     private val util = Utility()
 
+
     fun loadPost300() {
         val post = Post()
         with(post) {
@@ -115,8 +116,104 @@ class Post3Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+    fun loadPost303() {
+        var post=Post()
+        with(post) {
+            postNum = 303
+            lineNum =3
+            imageUri ="https://cdn.pixabay.com/photo/2016/07/29/08/51/target-1551492_1280.jpg"
+            postText =  arrayListOf(
+                " ההצלחה שלך נמדדת ",
+                " רק לפי האמונה שבך ",
+                " שאתה מצליח. "
 
-    fun loadPost306() {
+            )
+            val di =15
+            val dd=0
+            postMargin =  arrayListOf(
+                arrayListOf(0, 0 + di, 0, -1 + dd),
+                arrayListOf(0, 40 + di, 0, -1 + dd),
+                arrayListOf(0, 80 + di, 0, -1 + dd)
+            )
+            postTextSize =  arrayListOf(0, 22)
+            postTransparency =0
+            postBackground = "bdfff6"
+            val textColor = "ffffff"
+            postFontFamily =300
+
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
+    fun loadPost304() {
+        var post=Post()
+        with(post) {
+            postNum = 304
+            lineNum =3
+            imageUri ="https://cdn.pixabay.com/photo/2021/11/12/04/50/donkey-6787990_1280.jpg"
+            postText =  arrayListOf(
+                "החיים האלה דורשים ממך להתנהל בהגיון,",
+                " למרות שהם עצמם ",
+                " ממש לא הגיוניים. "
+            )
+            val di =0
+            val dd=0
+            postMargin =  arrayListOf(
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1 + di, 0, 45 + dd),
+                arrayListOf(0, -1 + di, 0, 10 + dd)
+            )
+            postTextSize =  arrayListOf(0, 22)
+            postTransparency =0
+            postBackground = "bdfff6"
+            val textColor = "ffffff"
+            postFontFamily =320
+
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost305() {
+        var post=Post()
+        with(post) {
+            postNum = 305
+            lineNum =3
+            imageUri ="https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_1280.jpg"
+            postText =  arrayListOf(
+                " יש לך את הכל, ",
+                " גם את המחשבה  הזו ",
+                " שחסר לך משהו. "
+            )
+            val di =0
+            val dd=0
+            postMargin =  arrayListOf(
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1 + di, 0, 45 + dd),
+                arrayListOf(0, -1 + di, 0, 10 + dd)
+            )
+            postTextSize =  arrayListOf(0, 22)
+            postTransparency =10
+            postBackground = "efc8b1"
+            val textColor = "8a6626"
+            postFontFamily =320
+
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+
+   fun loadPost306() {
         val post = Post()
         with(post) {
             postNum = 306
@@ -149,7 +246,9 @@ class Post3Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
 }
+
 
 
 

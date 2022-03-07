@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //   ---------------------------------    Pager
-      /*  val posts = downloadAllPost()
+       /* val posts = downloadAllPost()
         val pager=binding.viewPager2
         postAdapter = PostAdapter(pager,this, posts)
         pager.adapter=postAdapter
