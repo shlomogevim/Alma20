@@ -247,6 +247,174 @@ class Post3Lines(val context: Context) {
         util.sendPostToStringFirestore(post)
     }
 
+    fun loadPost307() {
+        val post = Post()
+        with(post) {
+            postNum = 307
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2020/10/09/13/12/man-5640540__340.jpg"
+            postText = arrayListOf(
+                "האדם הוא יצור שכחן,",
+                "הוא נזכר לחיות",
+                "רק כמה רגעים לפני המוות שלו.",
+            )
+            val di = 0
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + di, 0, -1 + dd),
+                arrayListOf(0, 35 + di, 0, -1 + dd),
+                arrayListOf(0, 70 + di, 0, -1 + dd)
+            )
+            postBackground = "a3842c"
+            postTransparency =2
+            val size1 = 25
+            val size2 = 0
+            postTextSize = arrayListOf(0, size1, size2)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            val col = "#ffffff"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postFontFamily =110
+            postRadiuas = 15
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+      fun loadPost308() {
+        val post = Post()
+        with(post) {
+            postNum = 308
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2016/07/28/19/38/lost-places-1549096_1280.jpg"
+            postText = arrayListOf(
+                "אתה יוצר את עולמך משני חומרים,",
+                "מהדברים שיש לך בקיומם",
+                "והדברים שאין לך בחסרונם.",
+            )
+            val di = 0
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0+ dd)
+            )
+            postBackground = "000000"
+            postTransparency =2
+            val size1 = 16
+            val size2 = 0
+            postTextSize = arrayListOf(0, size1, size2)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            val col = "#ffffff"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postFontFamily =103
+            postRadiuas = 15
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost309() {
+        val post = Post()
+        with(post) {
+            postNum = 309
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2016/11/18/16/16/teddy-bear-1835598_1280.jpg"
+            postText = arrayListOf(
+                "כל אחד נדפק בחיים פה ושם,",
+                "אבל לא כל אחד",
+                "מחשיב את עצמו לדפוק.",
+            )
+            val di = 0
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + di, 0, -1 + dd),
+                arrayListOf(0, 35 + di, 0, -1 + dd),
+                arrayListOf(0, 65 + di, 0, -1 + dd)
+            )
+            postBackground = "000000"
+            postTransparency =2
+            val size1 = 16
+            val size2 = 0
+            postTextSize = arrayListOf(0, size1, size2)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            val col = "#ffffff"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postFontFamily =103
+            postRadiuas = 15
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost310() {
+        val post = Post()
+        with(post) {
+            postNum = 310
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2021/12/21/10/16/barbed-wire-6884984_1280.jpg"
+            postText = arrayListOf(
+                "בדיקטטורה האכזרית שבעולמך,",
+                "אתה יוצר בכל בוקר",
+                "את השליטים שלך.",
+            )
+            val di = 20
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + di, 0, -1 + dd),
+                arrayListOf(0, 35 + di, 0, -1 + dd),
+                arrayListOf(0, 70 + di, 0, -1 + dd)
+            )
+            postBackground = "000000"
+            postTransparency =2
+            val size1 = 22
+            val size2 = 0
+            postTextSize = arrayListOf(0, size1, size2)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            val col = "#ffffff"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postFontFamily =110
+            postRadiuas = 15
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost311() {
+        val post = Post()
+        with(post) {
+            postNum = 311
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg"
+            postText = arrayListOf(
+                "העולם הזה לא משוגע,",
+                "הוא מתנהל לפי כללים ברורים",
+                "שרק משוגע לא מבין אותם.",
+            )
+            val di = 20
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + di, 0, -1 + dd),
+                arrayListOf(0, 35 + di, 0, -1 + dd),
+                arrayListOf(0, 70 + di, 0, -1 + dd)
+            )
+            postBackground = "000000"
+            postTransparency =2
+            val size1 = 22
+            val size2 = 0
+            postTextSize = arrayListOf(0, size1, size2)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            val col = "#ffffff"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postFontFamily =110
+            postRadiuas = 15
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 

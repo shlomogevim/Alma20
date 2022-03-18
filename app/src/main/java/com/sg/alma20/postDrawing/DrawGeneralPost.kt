@@ -53,7 +53,6 @@ class DrawGeneralPost() {
        //util.logi("DrawGeneralPost 110     \n     =========>  /n layout=$layout")
 
         imageView.load(post.imageUri)
-
         constraintSet.clone(layout)
 
         for (index in 1..post.lineNum) {

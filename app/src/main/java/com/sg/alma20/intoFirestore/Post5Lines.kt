@@ -392,7 +392,7 @@ class Post5Lines(val context: Context) {
     fun loadPost510() {
         var post=Post()
         with(post) {
-            postNum =509
+            postNum =510
             lineNum =5
             imageUri ="https://cdn.pixabay.com/photo/2017/06/25/08/07/sunbeds-2439952_1280.jpg"
             postText =  arrayListOf(
@@ -425,6 +425,83 @@ class Post5Lines(val context: Context) {
         util.sendPostToStringFirestore(post)
     }
 
+fun loadPost511() {
+    var post=Post()
+    with(post) {
+        postNum =511
+        lineNum =5
+        imageUri ="https://cdn.pixabay.com/photo/2013/05/11/08/28/sunset-110305__340.jpg"
+        postText =  arrayListOf(
+            "הטוב,",
+            "הרבה יותר קרוב",
+            "ממה שאתה חושב,",
+            "והרבה יותר רחוק",
+            "ממה שאתה מצפה לו."
+        )
+        val di =10
+        val dd=0
+        postMargin =  arrayListOf(
+            arrayListOf(0,0+di, 0,-1+dd),
+            arrayListOf(0,30+di, 0,-1+dd),
+            arrayListOf(0,60+di, 0,-1+dd),
+            arrayListOf(0,90+di, 0,-1+dd),
+            arrayListOf(0,120+di, 0,-1+dd)
+        )
+        postTextSize =  arrayListOf(0, 20)
+        postTransparency =7
+        postBackground =  "143d59"
+        val textColor = "f6ff03"
+        postFontFamily =320
+
+        postTextColor = arrayListOf(CONSTANT, "#$textColor")
+        postPadding = arrayListOf(10, 0, 10, 0)
+        postRadiuas = 15
+    }
+    drawPost.drawPostFire(post,layout)
+    util.sendPostToStringFirestore(post)
+}
+    /*
+גם אם תשתדל
+ לא תהיה הכי חכם בעולם,
+לעומת זאת
+אם תשתדל
+תוכל להיות הכי אתה בעולם
+*/
+    fun loadPost512() {
+        var post=Post()
+        with(post) {
+            postNum =512
+            lineNum =5
+            imageUri ="https://cdn.pixabay.com/photo/2012/03/04/01/01/father-22194_1280.jpg"
+            postText =  arrayListOf(
+                "גם אם תשתדל",
+                "לא תהיה הכי חכם בעולם,",
+                "לעומת זאת",
+                "אם תשתדל",
+                "תוכל להיות הכי אתה בעולם."
+            )
+            val di =0
+            val dd=0
+            postMargin =  arrayListOf(
+                arrayListOf(0,0+di, 0,-1+dd),
+                arrayListOf(0,30+di, 0,-1+dd),
+                arrayListOf(0,60+di, 0,-1+dd),
+                arrayListOf(0,90+di, 0,-1+dd),
+                arrayListOf(0,120+di, 0,-1+dd)
+            )
+            postTextSize =  arrayListOf(0, 20)
+            postTransparency =7
+            postBackground =  "143d59"
+            val textColor = "f6ff03"
+            postFontFamily =320
+
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
     }
 
 
