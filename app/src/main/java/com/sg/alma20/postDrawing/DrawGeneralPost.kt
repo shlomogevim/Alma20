@@ -26,8 +26,6 @@ class DrawGeneralPost() {
 
 
     fun drawPostFire(context: Context, post: Post, layout: ConstraintLayout) {
-
-
       //util.logi("DrawGeneralPost 100      \n     =========>  /n post=$post")
         val textView1 = layout.findViewById<TextView>(R.id.tv1Fire)
         val textView2 = layout.findViewById<TextView>(R.id.tv2Fire)

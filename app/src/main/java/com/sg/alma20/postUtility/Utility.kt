@@ -3,6 +3,7 @@ package com.sg.alma20.postUtility
 import android.content.Context
 import android.util.Log
 import com.google.firebase.firestore.DocumentSnapshot
+import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
 import com.sg.alma20.model.Post
 
@@ -14,7 +15,14 @@ import kotlin.collections.HashMap
 class Utility {
 
 
-
+    fun improveColorString(st:String):String{
+        var str1=st
+        val ch=str1.first().toString()
+        if (ch=="#"){
+            str1=str1.substring(1)
+        }
+        return str1
+    }
     fun downloadPost1(context:Context,index:Int) {
        // val layout1: ConstraintLayout = (context as Activity).findViewById(R.id.mainLayout1)
        //  val createPost1 = CreatePost1(context, layout1)
@@ -39,6 +47,7 @@ class Utility {
         val postTextColor: ArrayList<String> = snap?.get(POST_TEXT_COLOR) as ArrayList<String>
         val postFontFamily = snap?.getLong(POST_FONT_FAMILY)!!.toInt()
         val postRadius = snap?.getLong(POST_RADIUS)!!.toInt()
+        val timestamp = snap?.getTimestamp(POST_TIME_STAMP)
 
         val postTextSize1 = snap?.getString(POST_TEXT_SIZE).toString()
         val postTextSize: ArrayList<Int> = convertFromStringArrayToIntArry(postTextSize1)
@@ -46,13 +55,6 @@ class Utility {
         val postPadding: ArrayList<Int> = convertFromStringArrayToIntArry(postPadding1)
         val postMargin1 = snap?.getString(POST_MARGIN).toString()
         val postMargin: ArrayList<ArrayList<Int>> = convertFromStringArrayToIntArry2(postMargin1)
-
-        /* val postMargin = arrayListOf(
-             arrayListOf(0, 0, 0, -1),
-             arrayListOf(0, 100, 0, -1),
-             arrayListOf(0, 200, 0, -1)
-         )*/
-
 
         val newPost1 = Post(
             postId,
@@ -67,7 +69,8 @@ class Utility {
             postPadding,
             postTextColor,
             postFontFamily,
-            postRadius
+            postRadius,
+            timestamp
         )
         //logi("Utility 207   post=${newPost1}")
         return newPost1
@@ -408,6 +411,7 @@ class Utility {
             data[POST_TEXT_COLOR] = postTextColor
             data[POST_FONT_FAMILY] = postFontFamily
             data[POST_RADIUS] = postRadiuas
+            data[POST_TIME_STAMP] = FieldValue.serverTimestamp()
         }
         FirebaseFirestore.getInstance().collection(POST_REF).document(post.postNum.toString())
             .set(data)

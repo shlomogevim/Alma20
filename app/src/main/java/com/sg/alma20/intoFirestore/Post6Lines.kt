@@ -168,5 +168,45 @@ class Post6Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+    fun loadPost604() {
+        val post = Post()
+        with(post) {
+            postNum = 604
+            lineNum =6
+            imageUri = "https://cdn.pixabay.com/photo/2015/07/09/22/45/tree-838667_1280.jpg"
+            postText = arrayListOf(
+                "נחמה",
+                "זה שמישהו אומר לך ",
+                "שאתה בסדר,",
+                "שלווה",
+                "זה שאתה מבין",
+                "שאתה בסדר."
+            )
+            val di =0
+            val du =20
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + du, 0, -1 + di),
+                arrayListOf(0,30+ du, 0, -1 + di),
+                arrayListOf(0, 60+ du, 0, -1 + di),
+                arrayListOf(0,100 + du, 0, -1 + di),
+                arrayListOf(0, 130+ du, 0,-1 + di),
+                arrayListOf(0,160 + du, 0, -1 + di)
+            )
+
+            postTransparency =0
+            postTextSize = arrayListOf(0, 20)
+            postBackground = "1E4174"
+            val textColor = "DDA94B"
+            postFontFamily =300
+
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
   }
 

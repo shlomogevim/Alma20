@@ -58,7 +58,49 @@ class Post8Lines(val context: Context) {
         drawPost.drawPostFire(post,layout)
         util.sendPostToStringFirestore(post)
     }
-
+    fun loadPost801() {
+        val post = Post()
+        with(post) {
+            postNum = 801
+            lineNum =8
+            imageUri ="https://cdn.pixabay.com/photo/2019/11/07/20/44/dog-4609870_1280.jpg"
+            postText  = arrayListOf(
+                "הכלבים על הבוקר רצים בתזזיתיות",
+                "משיח לשיח, מריחים  פה מריחים שם:",
+                "מי עשה מה, איפה ומתי, ",
+                "האדם נע על הבוקר ברחבי הרשת",
+                "מאתר לאתר, קורא פה קורא שם: ",
+                "מי עשה מה, איפה ומתי,",
+                "ונראה שאם היית פחות הכלב שבך ",
+                "הבוקר שלך היה רגוע יותר."
+            )
+            postBackground ="000000"
+            postTransparency =9
+            val di=0
+            val dd=0
+            postMargin = arrayListOf(
+                arrayListOf(0,15+di,0,-1),
+                arrayListOf(0,40+di,0,-1+dd),
+                arrayListOf(0,65+di, 0, -1+dd),
+                arrayListOf(0,-1+di, 0,100+dd),
+                arrayListOf(0,-1+di, 0,75+dd),
+                arrayListOf(0,-1+di, 0,50+dd),
+                arrayListOf(0,-1+di, 0,25+dd),
+                arrayListOf(0,-1+di, 0,0+dd)
+            )
+            val size1=12
+            val size2=0
+            postTextSize =  arrayListOf(0, size1,size2)
+            postPadding =  arrayListOf(10, 0,10, 0)
+            val col = "#ffffff"
+            val col1 = "#4dd0e1"
+            postTextColor = arrayListOf(CONSTANT, col, col1, col1)
+            postFontFamily =103
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
 
     }
 

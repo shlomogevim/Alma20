@@ -460,13 +460,7 @@ fun loadPost511() {
     drawPost.drawPostFire(post,layout)
     util.sendPostToStringFirestore(post)
 }
-    /*
-גם אם תשתדל
- לא תהיה הכי חכם בעולם,
-לעומת זאת
-אם תשתדל
-תוכל להיות הכי אתה בעולם
-*/
+
     fun loadPost512() {
         var post=Post()
         with(post) {
@@ -502,6 +496,46 @@ fun loadPost511() {
         drawPost.drawPostFire(post,layout)
         util.sendPostToStringFirestore(post)
     }
+    fun loadPost513() {
+        val post = Post()
+        with(post) {
+            postNum = 513
+            lineNum = 5
+            imageUri = "https://cdn.pixabay.com/photo/2019/03/31/07/37/black-hole-4092609_1280.jpg"
+            postText = arrayListOf(
+                "מה יהיה ?",
+                "מה יהיה ?",
+                "אז זהו",
+                "שהעתיד הוא ממש כמו ההיסטוריה",
+                "רק עם תאריך אחר."
+            )
+            val di =0
+            val dd =0
+            postMargin = arrayListOf(
+                arrayListOf(0,20+di, 0,-1+dd),
+                arrayListOf(0,60+di, 0,-1+dd),
+                arrayListOf(0,-1+di, 0,70+dd),
+                arrayListOf(0,-1+di, 0,40+dd),
+                arrayListOf(0,-1+di, 0,10+dd)
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(1, 30,30,20,20,20)
+            val  backgroundColor = "#F2EDD7"
+            val textColor = "#b3b7b4"
+            postFontFamily =110
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 0
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
     }
 
 

@@ -41,7 +41,7 @@ class DrawPostCenter(val context: Context) {
         }
     }
     fun drawPostFire(post: Post, layout: ConstraintLayout) {
-       //util.logi("DrawPostCenter 105     =========>       post.lineNum=${post.lineNum}")
+ //    util.logi("DrawPostCenter 105     =========>       post.lineNum=${post.lineNum}")
 
         when (post.lineNum) {
 
