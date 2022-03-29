@@ -273,17 +273,25 @@ fun loadPost203() {
             val di = 0
             val du=0
             postMargin =  arrayListOf(
-                arrayListOf(0, -1+du, 0, 85+di),
+                arrayListOf(0, 10+du, 0, -1+di),
                 arrayListOf(0, -1+du, 0, 10+di)
             )
-            postTextSize =  arrayListOf(0, 26)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency = 8
-            postBackground = "bdfff6"
-            val textColor = "e23c52"
-            postTextColor = arrayListOf(CONSTANT, "#$textColor")
-            postFontFamily =200
+            postTransparency =5
+            postTextSize = arrayListOf(0, 18)
+            val  backgroundColor = "#0A174E"
+            val textColor = "#F5D042"
+            postFontFamily =300
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(5, 5, 5, 5)
             postRadiuas = 15
+
+
+
+
         }
         drawPost.drawPostFire(post,layout)
         util.sendPostToStringFirestore(post)
@@ -295,20 +303,20 @@ fun loadPost203() {
             lineNum = 2
             imageUri ="https://cdn.pixabay.com/photo/2016/06/23/21/04/fool-1476189_1280.jpg"
             postText =  arrayListOf(
-                "זה שאתה מאמין בהבלים",
+                "זה שאתה באמת מאמין בהבלים,",
                 "זה לא עושה אותם פחות הבלים."     )
             val di = 0
             val du=0
             postMargin =  arrayListOf(
-                arrayListOf(0, -1+du, 0, 95+di),
-                arrayListOf(0, -1+du, 0, 10+di)
+                arrayListOf(0, -1+du, 0, 85+di),
+                arrayListOf(0, -1+du, 0, 0+di)
             )
             postTextSize =  arrayListOf(0, 30)
-            postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency = 8
-            postBackground = "030e4f"
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postTransparency =6
+            postBackground = "#030e4f"
             val textColor = "f49f1c"
-            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postTextColor = arrayListOf(CONSTANT, "$textColor")
             postFontFamily =200
             postRadiuas = 15
         }
@@ -333,8 +341,8 @@ fun loadPost203() {
             postTextSize =  arrayListOf(0, 22)
             postPadding = arrayListOf(0, 0, 0, 0)
             postTransparency = 8
-            postBackground = "efc9af"
-            val textColor = "1f8ac0"
+            postBackground = "000000"
+            val textColor = "ffffff"
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
             postFontFamily =103
             postRadiuas = 15
@@ -359,10 +367,10 @@ fun loadPost203() {
             )
             postTextSize =  arrayListOf(0, 22)
             postPadding = arrayListOf(0, 0, 0, 0)
-            postTransparency = 8
-            postBackground = "efc9af"
-            val textColor = "1f8ac0"
-            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postTransparency = 0
+            postBackground = "#616247"
+            val textColor = "#DAA03D"
+            postTextColor = arrayListOf(CONSTANT, "$textColor")
             postFontFamily =103
             postRadiuas = 15
         }
@@ -381,17 +389,17 @@ fun loadPost203() {
             val di = 0
             val du=0
             postMargin =  arrayListOf(
-                arrayListOf(0, -1+du, 0, 50+di),
-                arrayListOf(0, -1+du, 0, 10+di)
+                arrayListOf(0, 0+du, 0, -1+di),
+                arrayListOf(0, -1+du, 0, 0+di)
             )
             postTextSize =  arrayListOf(0, 22)
-            postTransparency = 10
-            postBackground = "bdfff6"
-            val textColor = "e23c52"
-            postFontFamily =290
+            postTransparency =7
+            postBackground = "#2C5F2D"
+            val textColor = "#FFE77A"
+            postFontFamily =300
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
-            postPadding = arrayListOf(0, 0, 0, 0)
+            postPadding = arrayListOf(0, 5, 0, 5)
             postRadiuas = 15
         }
         drawPost.drawPostFire(post,layout)
@@ -410,13 +418,13 @@ fun loadPost203() {
             val du=0
             postMargin =  arrayListOf(
                 arrayListOf(0, 0+di, 0, -1),
-                arrayListOf(0, 80+di, 0, -1)
+                arrayListOf(0, 90+di, 0, -1)
             )
-            postTextSize =  arrayListOf(0, 22)
-            postTransparency = 8
+            postTextSize =  arrayListOf(0, 18)
+            postTransparency = 0
             postBackground = "bdfff6"
-            val textColor = "e23c52"
-            postFontFamily =290
+            val textColor = "#2C5F2D"
+            postFontFamily =410
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
             postPadding = arrayListOf(0, 0, 0, 0)
@@ -462,18 +470,18 @@ fun loadPost203() {
             lineNum = 2
             imageUri ="https://cdn.pixabay.com/photo/2015/05/02/18/15/church-750251_1280.jpg"
             postText =  arrayListOf(
-                " הימים הנוראים לא כל כך נוראיים ",
+                " הימים הנוראים לא כל כך נוראיים, ",
                 " סתם יצא להם שם שכזה. "
             )
             val di =5
             val du=0
             postMargin =  arrayListOf(
-                arrayListOf(0, -1+du, 0, 45+di),
+                arrayListOf(0, -1+du, 0, 35+di),
                 arrayListOf(0, -1+du, 0, 10+di)
             )
-            postTextSize =  arrayListOf(0, 22)
-            postTransparency =0
-            postBackground = "bdfff6"
+            postTextSize =  arrayListOf(0, 18)
+            postTransparency =5
+            postBackground = "000000"
             val textColor = "ffffff"
             postFontFamily =300
 
@@ -500,7 +508,7 @@ fun loadPost203() {
                 arrayListOf(0, -1+du, 0, 45+di),
                 arrayListOf(0, -1+du, 0, 10+di)
             )
-            postTextSize =  arrayListOf(0, 22)
+            postTextSize =  arrayListOf(0, 30)
             postTransparency =0
             postBackground = "bdfff6"
             val textColor = "ffffff"
@@ -524,20 +532,20 @@ fun loadPost203() {
                 "החיים לא שווים הרבה",
                 "אם לא חיים אותם."
             )
-            val di =40
+            val di =20
             val du=0
             postMargin =  arrayListOf(
                 arrayListOf(0, 0+di, 0, -1),
                 arrayListOf(0, 35+di, 0, -1)
             )
-            postTextSize =  arrayListOf(0, 22)
+            postTextSize =  arrayListOf(0, 24)
             postTransparency =5
-            postBackground = "0D47A1"
-            val textColor = "ffffff"
+            postBackground = "#FDDB27"
+            val textColor = "#00B1D2"
             postFontFamily =300
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
-            postPadding = arrayListOf(10, 0, 10, 0)
+            postPadding = arrayListOf(5, 0, 5, 0)
             postRadiuas = 15
         }
         drawPost.drawPostFire(post,layout)
@@ -554,20 +562,20 @@ fun loadPost203() {
                 "מילים יכולות לפתוח לך עולמות",
                 "התחכמויות סוגרות לך עולמות."
             )
-            val di =0
+            val di =10
             val du=0
             postMargin =  arrayListOf(
                 arrayListOf(0, 0+di, 0, -1),
-                arrayListOf(0, 65+di, 0, -1)
+                arrayListOf(0, 70+di, 0, -1)
             )
-            postTextSize =  arrayListOf(0, 22)
-            postTransparency =5
-            postBackground = "0D47A1"
-            val textColor = "ffffff"
+            postTextSize =  arrayListOf(0, 24)
+            postTransparency =10
+            postBackground = "#9FC131"
+            val textColor = "#eedfe2"
             postFontFamily =300
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
-            postPadding = arrayListOf(10, 0, 10, 0)
+            postPadding = arrayListOf(0, 5, 0,5)
             postRadiuas = 15
         }
         drawPost.drawPostFire(post,layout)
@@ -583,11 +591,11 @@ fun loadPost203() {
                 "משתדל שלא להילחם עם החיים",
                 "למרות שאני תמיד צודק."
             )
-            val di =0
+            val di =20
             val du=0
             postMargin =  arrayListOf(
                 arrayListOf(0, 0+di, 0, -1),
-                arrayListOf(0, 65+di, 0, -1)
+                arrayListOf(0, 80+di, 0, -1)
             )
             postTextSize =  arrayListOf(0, 22)
             postTransparency =5
@@ -596,7 +604,7 @@ fun loadPost203() {
             postFontFamily =300
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
-            postPadding = arrayListOf(10, 0, 10, 0)
+            postPadding = arrayListOf(5, 5, 5, 5)
             postRadiuas = 15
         }
         drawPost.drawPostFire(post,layout)
@@ -646,8 +654,8 @@ fun loadPost203() {
             val di =0
             val du=0
             postMargin =  arrayListOf(
-                arrayListOf(0, 20+du, 0, -1+di),
-                arrayListOf(0, -1+du, 0, 20+di)
+                arrayListOf(0, 10+du, 0, -1+di),
+                arrayListOf(0, -1+du, 0, 10+di)
             )
             postTextSize =  arrayListOf(0, 22)
             postTransparency =0
@@ -767,10 +775,10 @@ fun loadPost203() {
             lineNum = 2
             imageUri ="https://cdn.pixabay.com/photo/2017/04/05/18/04/brick-2205882_1280.jpg"
             postText =  arrayListOf(
-                "רגשות אשמה זה המקום",
+                "רגשות אשמה זה המקום,",
                 "בו אתה לא מקבל את מה שאתה."
             )
-            val di =20
+            val di =5
             val du=0
             postMargin =  arrayListOf(
                 arrayListOf(0, -1+du, 0, 65+di),
@@ -787,7 +795,7 @@ fun loadPost203() {
            val textcolo=util.improveColorString(textColor)
            val col = "#$textcolo"
            postTextColor = arrayListOf(CONSTANT, col)
-           postPadding = arrayListOf(5, 0, 5, 0)
+           postPadding = arrayListOf(5, 5, 5, 5)
            postRadiuas = 15
 
         }
@@ -808,7 +816,7 @@ fun loadPost203() {
             val di =20
             val du=0
             postMargin =  arrayListOf(
-                arrayListOf(0, -1+du, 0, 65+di),
+                arrayListOf(0, -1+du, 0, 75+di),
                 arrayListOf(0, -1+du, 0, 10+di)
             )
             postTransparency =7
@@ -821,7 +829,7 @@ fun loadPost203() {
             val textcolo=util.improveColorString(textColor)
             val col = "#$textcolo"
             postTextColor = arrayListOf(CONSTANT, col)
-            postPadding = arrayListOf(5, 0, 5, 0)
+            postPadding = arrayListOf(5, 5, 5, 5)
             postRadiuas = 15
          }
         drawPost.drawPostFire(post,layout)

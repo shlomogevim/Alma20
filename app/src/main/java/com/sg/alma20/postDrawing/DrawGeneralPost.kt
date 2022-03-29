@@ -139,67 +139,80 @@ class DrawGeneralPost() {
     private fun createTextView(
         index: Int, textView: TextView, post: Post, context: Context, layout: ConstraintLayout
     ) {
-      val ind = index - 1
-        textView.text = post.postText[ind]
-       // util.logi("Draw GeneralPost 1012   ${post.postTextColor.joinToString()}")
-           if (post.postTextColor[0] == CONSTANT) {
-          textView.setTextColor(Color.parseColor(post.postTextColor[1]))
-      } else {
-          textView.setTextColor(Color.parseColor(post.postTextColor[1]))
-      }
-    if (post.postTextSize[0] == 0) {
-           textView.textSize = post.postTextSize[1].toFloat()
-       } else {
-           textView.textSize = post.postTextSize[index].toFloat()
-       }
-       val tra = helper.getTransfo(post.postTransparency)
-       val shape = GradientDrawable()
-       shape.cornerRadius = post.postRadiuas.toPx().toFloat()
-       shape.setColor(Color.parseColor("#$tra${post.postBackground}"))
+util.logi("Draw GeneralPost 142  ${post.postTextColor.joinToString()}")
 
-       for (index in 1..post.postTextColor.size - 1) {
-           if (!post.postTextColor[index].contains("#")) {
-               post.postTextColor[index] = "#" + post.postTextColor[index]
-           }
-       }
+for (index in 1..post.postTextColor.size - 1) {
+   /* if (!post.postTextColor[index].contains("#")) {
+        post.postTextColor[index] = "#" + post.postTextColor[index]
+    }*/
+    var col= post.postTextColor[index]
+   util.logi("Draw GeneralPost 147    col=$col")
+    col=col.replace("$","")
+     col= col.replace("#","")
+       col = "#$col"
+    post.postTextColor[index]=col
 
-       textView.background = shape
-       val fontAddress = helper.getFamilyFont(post.postFontFamily)
+    //  util.logi("Draw GeneralPost 152  ${post.postTextColor.joinToString()}")
+}
+val ind = index - 1
+textView.text = post.postText[ind]
+//  util.logi("Draw GeneralPost 149   ${post.postTextColor.joinToString()}")
+   if (post.postTextColor[0] == CONSTANT) {
+  textView.setTextColor(Color.parseColor(post.postTextColor[1]))
+} else {
+  textView.setTextColor(Color.parseColor(post.postTextColor[1]))
+}
+if (post.postTextSize[0] == 0) {
+   textView.textSize = post.postTextSize[1].toFloat()
+} else {
+   textView.textSize = post.postTextSize[index].toFloat()
+}
+val tra = helper.getTransfo(post.postTransparency)
+val shape = GradientDrawable()
+shape.cornerRadius = post.postRadiuas.toPx().toFloat()
+// util.logi("Draw GeneralPost 164  post.postBackground= ${post.postBackground}")
 
-       textView.typeface = ResourcesCompat.getFont(context, fontAddress)
-       textView.setPadding(
-           post.postPadding[0].toPx(),
-           post.postPadding[1].toPx(),
-           post.postPadding[2].toPx(),
-           post.postPadding[3].toPx()
-       )
-       textView.gravity = Gravity.CENTER
-    }
+    post.postBackground= post.postBackground.replace("#","")
+    post.postBackground= post.postBackground.replace("$","")
 
-    private fun locateTextView(
-        index: Int,
-        textView: TextView,
-        post: Post
-    ) {
-        constraintSet.clear(textView.id, ConstraintSet.TOP)
-        constraintSet.clear(textView.id, ConstraintSet.BOTTOM)
-        val ind = index - 1
+shape.setColor(Color.parseColor("#$tra${post.postBackground}"))
+textView.background = shape
+val fontAddress = helper.getFamilyFont(post.postFontFamily)
 
-        if (post.postMargin[ind][3] == -1) {
-            constraintSet.connect(
-                textView.id,
-                ConstraintSet.TOP,
-                ConstraintSet.PARENT_ID,
-                ConstraintSet.TOP, post.postMargin[ind][1].toPx()
-            )
-        }
-        if (post.postMargin[ind][1] == -1) {
-            constraintSet.connect(
-                textView.id,
-                ConstraintSet.BOTTOM,
-                ConstraintSet.PARENT_ID,
-                ConstraintSet.BOTTOM, post.postMargin[ind][3].toPx()
-            )
-        }
-    }
+textView.typeface = ResourcesCompat.getFont(context, fontAddress)
+textView.setPadding(
+   post.postPadding[0].toPx(),
+   post.postPadding[1].toPx(),
+   post.postPadding[2].toPx(),
+   post.postPadding[3].toPx()
+)
+textView.gravity = Gravity.CENTER
+}
+
+private fun locateTextView(
+index: Int,
+textView: TextView,
+post: Post
+) {
+constraintSet.clear(textView.id, ConstraintSet.TOP)
+constraintSet.clear(textView.id, ConstraintSet.BOTTOM)
+val ind = index - 1
+
+if (post.postMargin[ind][3] == -1) {
+    constraintSet.connect(
+        textView.id,
+        ConstraintSet.TOP,
+        ConstraintSet.PARENT_ID,
+        ConstraintSet.TOP, post.postMargin[ind][1].toPx()
+    )
+}
+if (post.postMargin[ind][1] == -1) {
+    constraintSet.connect(
+        textView.id,
+        ConstraintSet.BOTTOM,
+        ConstraintSet.PARENT_ID,
+        ConstraintSet.BOTTOM, post.postMargin[ind][3].toPx()
+    )
+}
+}
 }
