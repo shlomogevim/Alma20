@@ -69,8 +69,8 @@ class Post3Lines(val context: Context) {
                 arrayListOf(0, -1 + di, 0, 105 + dd),
                 arrayListOf(0, -1 + di, 0, 10 + dd)
             )
-            postBackground = "a3842c"
-            postTransparency = 7
+            postBackground = "000000"
+            postTransparency = 2
             val size1 = 25
             val size2 = 0
             postTextSize = arrayListOf(0, size1, size2)
@@ -103,12 +103,12 @@ class Post3Lines(val context: Context) {
                 arrayListOf(0, 100 + di, 0, -1 + dd)
             )
             postBackground = "f4b41a"
-            postTransparency = 7
+            postTransparency = 0
             val size1 = 22
             val size2 = 0
             postTextSize = arrayListOf(0, size1, size2)
             postPadding = arrayListOf(10, 0, 10, 0)
-            val col = "#ffffff"
+            val col = "#0A174E"
             postTextColor = arrayListOf(CONSTANT, col)
             postFontFamily = 103
             postRadiuas = 15
@@ -153,24 +153,25 @@ class Post3Lines(val context: Context) {
         with(post) {
             postNum = 304
             lineNum =3
-            imageUri ="https://cdn.pixabay.com/photo/2021/11/12/04/50/donkey-6787990_1280.jpg"
+         //   imageUri ="https://cdn.pixabay.com/photo/2021/11/12/04/50/donkey-6787990_1280.jpg"
+            imageUri ="https://cdn.pixabay.com/photo/2016/10/03/23/23/puzzle-1713170_1280.jpg"
             postText =  arrayListOf(
-                "החיים האלה דורשים ממך להתנהל בהגיון,",
+                "החיים האלה דורשים ממך להתנהל בהיגיון,",
                 " למרות שהם עצמם ",
                 " ממש לא הגיוניים. "
             )
             val di =0
             val dd=0
             postMargin =  arrayListOf(
-                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1 + di, 0, 75+ dd),
                 arrayListOf(0, -1 + di, 0, 45 + dd),
-                arrayListOf(0, -1 + di, 0, 10 + dd)
+                arrayListOf(0, -1 + di, 0, 15 + dd)
             )
-            postTextSize =  arrayListOf(0, 22)
-            postTransparency =0
-            postBackground = "bdfff6"
+            postTextSize =  arrayListOf(0, 20)
+            postTransparency =5
+            postBackground = "000000"
             val textColor = "ffffff"
-            postFontFamily =320
+            postFontFamily =509
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
             postPadding = arrayListOf(0, 0, 0, 0)
@@ -188,7 +189,7 @@ class Post3Lines(val context: Context) {
             imageUri ="https://cdn.pixabay.com/photo/2017/03/29/15/18/tianjin-2185510_1280.jpg"
             postText =  arrayListOf(
                 " יש לך את הכל, ",
-                " גם את המחשבה  הזו ",
+                "גם את אותה המחשבה ",
                 " שחסר לך משהו. "
             )
             val di =0
@@ -205,7 +206,7 @@ class Post3Lines(val context: Context) {
             postFontFamily =320
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
-            postPadding = arrayListOf(0, 0, 0, 0)
+            postPadding = arrayListOf(5,5, 5, 5)
             postRadiuas = 15
         }
         drawPost.drawPostFire(post,layout)
@@ -222,7 +223,7 @@ class Post3Lines(val context: Context) {
             postText = arrayListOf(
                 "המתכון הבטוח שלא  להזדקן",
                 "הוא פשוט",
-                "להישאר צעיר.",
+                " להישאר צעיר. ",
             )
             val di = 0
             val dd = 0
@@ -255,10 +256,10 @@ class Post3Lines(val context: Context) {
             imageUri = "https://cdn.pixabay.com/photo/2020/10/09/13/12/man-5640540__340.jpg"
             postText = arrayListOf(
                 "האדם הוא יצור שכחן,",
-                "הוא נזכר לחיות",
+                "הוא בדרך כלל נזכר לחיות",
                 "רק כמה רגעים לפני המוות שלו.",
             )
-            val di = 0
+            val di =10
             val dd = 0
             postMargin = arrayListOf(
                 arrayListOf(0, 0 + di, 0, -1 + dd),
@@ -292,7 +293,7 @@ class Post3Lines(val context: Context) {
                 "והדברים שאין לך בחסרונם.",
             )
             val di = 0
-            val dd = 0
+            val dd = 10
             postMargin = arrayListOf(
                 arrayListOf(0, -1 + di, 0, 70 + dd),
                 arrayListOf(0, -1 + di, 0, 35 + dd),
@@ -325,22 +326,22 @@ class Post3Lines(val context: Context) {
                 "אבל לא כל אחד",
                 "מחשיב את עצמו לדפוק.",
             )
-            val di = 0
+            val di = 20
             val dd = 0
             postMargin = arrayListOf(
                 arrayListOf(0, 0 + di, 0, -1 + dd),
-                arrayListOf(0, 35 + di, 0, -1 + dd),
-                arrayListOf(0, 65 + di, 0, -1 + dd)
+                arrayListOf(0, 30 + di, 0, -1 + dd),
+                arrayListOf(0,60 + di, 0, -1 + dd)
             )
             postBackground = "000000"
             postTransparency =2
-            val size1 = 16
+            val size1 = 20
             val size2 = 0
             postTextSize = arrayListOf(0, size1, size2)
-            postPadding = arrayListOf(10, 0, 10, 0)
+            postPadding = arrayListOf(0, 0, 0, 0)
             val col = "#ffffff"
             postTextColor = arrayListOf(CONSTANT, col)
-            postFontFamily =103
+            postFontFamily =520
             postRadiuas = 15
         }
         //  util.logi("Post3Lines  106    post=$post")
@@ -460,20 +461,20 @@ class Post3Lines(val context: Context) {
                 "שלא יעזור לך גם אם תתרחק מהם אל מעבר לאופק,",
                 "החוויה איתם נשארת איתך קרוב.",
             )
-            val di = 0
+            val di = 20
             val dd = 0
             postMargin = arrayListOf(
                 arrayListOf(0, 0 + di, 0, -1 + dd),
-                arrayListOf(0, 30 + di, 0, -1 + dd),
-                arrayListOf(0, 137 + di, 0, -1 + dd)
+                arrayListOf(0, 35 + di, 0, -1 + dd),
+                arrayListOf(0, 150 + di, 0, -1 + dd)
             )
-            postBackground = "000000"
-            postTransparency =1
+            postBackground = "#0A174E"
+            postTransparency =6
             val size1 = 24
             val size2 = 0
             postTextSize = arrayListOf(0, size1, size2)
-            postPadding = arrayListOf(10, 0, 10, 0)
-            val col = "#ffffff"
+            postPadding = arrayListOf(10, 5, 10, 5)
+            val col = "#F5D042"
             postTextColor = arrayListOf(CONSTANT, col)
             postFontFamily =110
             postRadiuas = 15
@@ -498,15 +499,15 @@ class Post3Lines(val context: Context) {
             val dd = 0
             postMargin = arrayListOf(
                 arrayListOf(0, 0 + di, 0, -1 + dd),
-                arrayListOf(0, 30 + di, 0, -1 + dd),
-                arrayListOf(0, 60 + di, 0, -1 + dd)
+                arrayListOf(0, 45 + di, 0, -1 + dd),
+                arrayListOf(0, 90 + di, 0, -1 + dd)
             )
 
             postTransparency =8
             postTextSize = arrayListOf(0, 24)
             postBackground = "1E4174"
             val textColor = "DDA94B"
-            postFontFamily =110
+            postFontFamily =570
 
             val col = "#$textColor"
             postTextColor = arrayListOf(CONSTANT, col)
@@ -528,7 +529,7 @@ class Post3Lines(val context: Context) {
                 "ברגע שאין בך צורך שמישהו אחר יגיד לך",
                 "שאתה בסדר.",
             )
-            val di = 5
+            val di =15
             val dd = 0
             postMargin = arrayListOf(
                 arrayListOf(0, 0 + di, 0, -1 + dd),
@@ -604,15 +605,15 @@ class Post3Lines(val context: Context) {
                 "זו המחשבה שיש לך בעיה.",
             )
             val di = 0
-            val dd = 5
+            val dd = 0
             postMargin = arrayListOf(
-                arrayListOf(0, -1 + di, 0, 70 + dd),
-                arrayListOf(0, -1 + di, 0, 35 + dd),
-                arrayListOf(0, -1 + di, 0, 0+ dd)
+                arrayListOf(0, 20 + di, 0, -1 + dd),
+                arrayListOf(0, -1+ di, 0, 60+ dd),
+                arrayListOf(0, -1 + di, 0, 10+ dd)
             )
 
             postTransparency =7
-            postTextSize = arrayListOf(0, 20)
+            postTextSize = arrayListOf(0, 24)
             val  backgroundColor = "#815854"
             val textColor = "#F9EBDE"
             postFontFamily =100
