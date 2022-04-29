@@ -22,7 +22,7 @@ class Post7Lines(val context: Context) {
             lineNum = 7
             imageUri = "https://cdn.pixabay.com/photo/2017/09/03/09/17/question-2709670_1280.jpg"
             postText = arrayListOf(
-                "האדם שמחפש משמעות בחיים",
+                "האדם המחפש משמעות בחיים",
                 "דומה לאחד שקיבל במתנה כלי מופלא",
                 "והוא ממש נבוך מהמתנה הזו,",
                 " מצד אחד ",
@@ -30,23 +30,23 @@ class Post7Lines(val context: Context) {
                 " אבל מהצד השני ",
                 "הוא לא יודע  מה לעזאזל עושים עם זה."
             )
-            postBackground = "a9dce3"
-            postTransparency = 9
+            postBackground = "000000"
+            postTransparency = 10
             val di = 0
-            val dd = -80
+            val dd = 10
             postMargin = arrayListOf(
-                arrayListOf(0, -1 + di, 0, 450 + dd),
-                arrayListOf(0, -1 + di, 0, 380 + dd),
-                arrayListOf(0, -1 + di, 0, 310 + dd),
-                arrayListOf(0, -1 + di, 0, 265 + dd),
-                arrayListOf(0, -1 + di, 0, 195 + dd),
-                arrayListOf(0, -1 + di, 0, 150 + dd),
-                arrayListOf(0, -1 + di, 0, 80 + dd)
+                arrayListOf(0, -1 + di, 0, 200 + dd),
+                arrayListOf(0, -1 + di, 0,170 + dd),
+                arrayListOf(0, -1 + di, 0, 140 + dd),
+                arrayListOf(0, -1 + di, 0, 110 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
+                arrayListOf(0, -1 + di, 0, 30 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
             )
-            val size1 = 20
+            val size1 = 14
             val size2 = 0
             postTextSize = arrayListOf(0, size1, size2)
-            postPadding = arrayListOf(0, 0, 0, 0)
+            postPadding = arrayListOf(5, 0, 5, 0)
             val col = "#ffffff"
             val col1 = "#4dd0e1"
             postTextColor = arrayListOf(CONSTANT, col, col1)

@@ -5,6 +5,7 @@ import android.util.Log
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.FirebaseFirestore
+
 import com.sg.alma20.model.Post
 
 
@@ -26,6 +27,7 @@ class Utility {
     fun downloadPost1(context:Context,index:Int) {
        // val layout1: ConstraintLayout = (context as Activity).findViewById(R.id.mainLayout1)
        //  val createPost1 = CreatePost1(context, layout1)
+
         FirebaseFirestore.getInstance().collection(POST_REF).document(index.toString()).get()
             .addOnCompleteListener { task->
                 if (task.isSuccessful){

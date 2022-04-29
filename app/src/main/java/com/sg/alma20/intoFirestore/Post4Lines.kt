@@ -108,10 +108,10 @@ class Post4Lines(val context: Context) {
             val di = 0
             val dd = 0
             postMargin = arrayListOf(
-                arrayListOf(0, 10 + di, 0, -1 + dd),
-                arrayListOf(0, 45 + di, 0, -1 + dd),
-                arrayListOf(0, 80 + di, 0, -1 + dd),
-                arrayListOf(0, 115 + di, 0, -1 + dd)
+                arrayListOf(0, -1 + di, 0, 115 + dd),
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1 + di, 0, 45 + dd),
+                arrayListOf(0, -1 + di, 0, 10 + dd)
             )
             val size1 = 16
             val size2 = 0
@@ -132,7 +132,7 @@ class Post4Lines(val context: Context) {
         with(post) {
             postNum = 403
             lineNum = 4
-            imageUri = "https://cdn.pixabay.com/photo/2021/09/14/12/17/education-6623844_1280.jpg"
+            imageUri = "https://cdn.pixabay.com/photo/2016/06/01/09/15/art-1428646_1280.jpg"
             postText = arrayListOf(
                 " האויב של הטוב ",
                 " הוא הטוב יותר, ",
@@ -140,9 +140,9 @@ class Post4Lines(val context: Context) {
                 " הוא הרגע הבא. "
             )
             postBackground = "a3842c"
-            postTransparency = 6
+            postTransparency = 10
             val di = 0
-            val dd = 10
+            val dd =260
             postMargin = arrayListOf(
                 arrayListOf(0, -1 + di, 0, 120 + dd),
                 arrayListOf(0, -1 + di, 0, 80 + dd),
@@ -176,7 +176,7 @@ class Post4Lines(val context: Context) {
                 "של מה שהם חושבים שהם."
             )
             postBackground = "a3842c"
-            postTransparency = 6
+            postTransparency = 4
             val di = 0
             val dd = 10
             postMargin = arrayListOf(
@@ -213,7 +213,8 @@ class Post4Lines(val context: Context) {
             val di = 0
             val dd = 10
             postMargin = arrayListOf(
-                arrayListOf(0, -1 + di, 0, 145 + dd),
+                arrayListOf(0,10 + di, 0, -1
+                        + dd),
                 arrayListOf(0, -1 + di, 0, 80 + dd),
                 arrayListOf(0, -1 + di, 0, 40 + dd),
                 arrayListOf(0, -1 + di, 0, 0 + dd)
@@ -321,13 +322,13 @@ class Post4Lines(val context: Context) {
             val di = 0
             val dd = 10
             postMargin = arrayListOf(
-                arrayListOf(0, -1 + di, 0, 75 + dd),
-                arrayListOf(0, -1 + di, 0, 50 + dd),
-                arrayListOf(0, -1 + di, 0, 25 + dd),
+                arrayListOf(0, -1 + di, 0, 120 + dd),
+                arrayListOf(0, -1 + di, 0, 90 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
                 arrayListOf(0, -1 + di, 0, 0 + dd)
             )
 
-            postTextSize = arrayListOf(0, 16)
+            postTextSize = arrayListOf(0, 20)
             postBackground = "FCE77D"
             postTransparency = 7
             val textColor = "1820FF"
@@ -922,7 +923,7 @@ class Post4Lines(val context: Context) {
             postBackground = "000000"
             postTransparency =1
             val textColor = "ffffff"
-            postFontFamily = 110
+            postFontFamily = 100
 
             postTextColor = arrayListOf(CONSTANT, "#$textColor")
             postRadiuas = 15
@@ -1140,6 +1141,43 @@ class Post4Lines(val context: Context) {
             val  backgroundColor = "#F2EDD7"
             val textColor = "#ffffff"
             postFontFamily =300
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(5, 0, 5, 0)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost432() {
+        val post = Post()
+        with(post) {
+            postNum = 432
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2016/03/27/17/42/man-1283235_1280.jpg"
+            postText = arrayListOf(
+                "זה שאני חי כל כך הרבה שנים",
+                "זה לא אומר שיש לי כישורים מיוחדים לעשות את זה,",
+                "זה אומר רק שלא נהרגתי אפילו פעם אחת",
+                "ושאני יודע לקום בבוקר."
+            )
+            val di =0
+            val dd =10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
+                arrayListOf(0, -1 + di, 0,30 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =9
+            postTextSize = arrayListOf(0, 12)
+            val  backgroundColor = "#FCF6F5"
+            val textColor = "#990011"
+            postFontFamily =103
             postBackground =util. improveColorString(backgroundColor)
             val textcolo=util.improveColorString(textColor)
             val col = "#$textcolo"

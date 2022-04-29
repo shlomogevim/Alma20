@@ -31,20 +31,20 @@ class Post5Lines(val context: Context) {
                 " שאתה חולק לכל אחד מהם. "
             )
             postBackground ="a9dce3"
-            postTransparency =6
+            postTransparency =8
             val di=0
-            val dd=0
+            val dd=20
             postMargin = arrayListOf(
-                arrayListOf(0,-1+di,0,160+dd),
-                arrayListOf(0,-1+di, 0, 120+dd),
-                arrayListOf(0,-1+di, 0,80+dd),
-                arrayListOf(0,-1+di, 0,40+dd),
+                arrayListOf(0,-1+di,0,200+dd),
+                arrayListOf(0,-1+di, 0, 150+dd),
+                arrayListOf(0,-1+di, 0,100+dd),
+                arrayListOf(0,-1+di, 0,50+dd),
                 arrayListOf(0,-1+di, 0,0+dd)
             )
            val size1=20
             val size2=0
             postTextSize =  arrayListOf(0, size1,size2)
-            postPadding =  arrayListOf(0, 0,0, 0)
+            postPadding =  arrayListOf(0, 2,0, 2)
             val col = "#ffffff"
             val col1 = "#4dd0e1"
             postTextColor = arrayListOf(CONSTANT, col, col1)
@@ -144,8 +144,8 @@ class Post5Lines(val context: Context) {
                 " לגדולים ",
                 " מגרש בלי משחקים. "
             )
-            postBackground ="390879"
-            postTransparency =6
+            postBackground ="000000"
+            postTransparency =10
             val di=0
             val dd=-5
             postMargin = arrayListOf(
@@ -160,7 +160,7 @@ class Post5Lines(val context: Context) {
             val size2=0
             postTextSize =  arrayListOf(0, size1,size2)
             postPadding =  arrayListOf(0, 0,0, 0)
-           val col = "#6bdf10"
+           val col = "#ffffff"
             postTextColor = arrayListOf(CONSTANT, col )
             postFontFamily =1
             postRadiuas = 15
@@ -179,7 +179,7 @@ class Post5Lines(val context: Context) {
             postText = arrayListOf(
                 " בזמנים שהכול נשבר מסביב ",
                 " וכל גל נראה מאיים ואינסופי, ",
-                " ניזכר במשפט של אריק איינשטיין בערוב ימיו: ",
+                " ניזכר במשפט של אריק איינשטיין: ",
                 "\"" + st1,
                 st2 + "\""
             )
@@ -191,10 +191,9 @@ class Post5Lines(val context: Context) {
             postMargin = arrayListOf(
                 arrayListOf(0,10,0,-1),
                 arrayListOf(0,45+di,0,-1),
-
-                arrayListOf(0,-1+di, 0,60+dd),
-                arrayListOf(0,-1+di, 0,30+dd),
-                arrayListOf(0,-1+di, 0,5+dd)
+                arrayListOf(0,80+di,0,-1),
+                arrayListOf(0,115+di,0,-1),
+                arrayListOf(0,145+di,0,-1),
             )
             val size1=16
             val size2=0
@@ -257,7 +256,7 @@ class Post5Lines(val context: Context) {
                 "  גדולות כקטנות,  ",
                 "  הן עוגנים השומרים אותך  ",
                 "  לבל תתנפץ  ",
-                "  בחוסר המשמעות של הקיום היומיומי.  "
+                "  בחוסר המשמעות של הקיום.  "
             )
             postBackground ="263238"
             postTransparency =4
@@ -370,10 +369,10 @@ class Post5Lines(val context: Context) {
             val di =0
             val dd=10
             postMargin =  arrayListOf(
-                arrayListOf(0,-1+di, 0,100+dd),
-                arrayListOf(0,-1+di, 0,75+dd),
-                arrayListOf(0,-1+di, 0,50+dd),
-                arrayListOf(0,-1+di, 0,25+dd),
+                arrayListOf(0,-1+di, 0,120+dd),
+                arrayListOf(0,-1+di, 0,90+dd),
+                arrayListOf(0,-1+di, 0,60+dd),
+                arrayListOf(0,-1+di, 0,30+dd),
                 arrayListOf(0,-1+di, 0,0+dd)
             )
             postTextSize =  arrayListOf(0, 17)
@@ -399,7 +398,7 @@ class Post5Lines(val context: Context) {
                 "אתה רוצה דברים מסוימים",
                 "שלא בגלל שאין לך אותם,",
                 "כמו",
-                "שאתה לא יודע",
+                "שאין בך מודעות ",
                 "שבעצם יש לך כבר אותם."
             )
             val di =0
@@ -474,7 +473,7 @@ fun loadPost511() {
                 "אם תשתדל",
                 "תוכל להיות הכי אתה בעולם."
             )
-            val di =0
+            val di =10
             val dd=0
             postMargin =  arrayListOf(
                 arrayListOf(0,0+di, 0,-1+dd),
