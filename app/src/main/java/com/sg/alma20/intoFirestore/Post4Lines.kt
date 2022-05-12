@@ -1525,6 +1525,43 @@ class Post4Lines(val context: Context) {
     }
 
 
+fun loadPost442() {
+    val post = Post()
+    with(post) {
+        postNum = 442
+        lineNum = 4
+        imageUri = "https://cdn.pixabay.com/photo/2015/12/04/09/34/crawl-1076324_1280.jpg"
+        postText = arrayListOf(
+            " האמנות הזו ",
+            "  להשתתף רק בוויכוחים  ",
+            " שנכונים לך ",
+            "  שמורה למתי מעט.  "
+        )
+        val di =0
+        val dd =20
+        postMargin = arrayListOf(
+            arrayListOf(0, -1 + di, 0, 105+ dd),
+            arrayListOf(0,-1 + di, 0, 70 + dd),
+            arrayListOf(0, -1 + di, 0,35+ dd),
+            arrayListOf(0, -1+ di, 0, 0 + dd)
+        )
+        postTransparency =3
+        postTextSize = arrayListOf(0, 17)
+        val  backgroundColor = "#00203F"
+        val textColor = "#ADEFD1"
+        postFontFamily =103
+        postBackground =util. improveColorString(backgroundColor)
+        val textcolo=util.improveColorString(textColor)
+        val col = "#$textcolo"
+        postTextColor = arrayListOf(CONSTANT, col)
+        postPadding = arrayListOf(0,0, 0, 0)
+        postRadiuas = 15
+
+    }
+    drawPost.drawPostFire(post, layout)
+    util.sendPostToStringFirestore(post)
+}
+
    }
 
 

@@ -1009,6 +1009,44 @@ fun loadPost320() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost328() {
+        val post = Post()
+        with(post) {
+            postNum = 328
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2014/09/19/17/18/rag-doll-452774_1280.jpg"
+            postText = arrayListOf(
+                " שני דברים צריך האדם בחייו, ",
+                "אישור שלא להיות מושלם",
+                " ורצון שלא להיות סמרטוט. ",
+            )
+            val di = 0
+            val dd = 20
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1+ di, 0, 40+ dd),
+                arrayListOf(0, -1 + di, 0,0+ dd)
+            )
+
+            postTransparency =7
+            postTextSize = arrayListOf(0, 22)
+            val  backgroundColor = "#ADEFD1"
+            val textColor = "#00203F"
+            postFontFamily =100
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 
