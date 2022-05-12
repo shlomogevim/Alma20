@@ -587,11 +587,7 @@ class Post3Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
-    /*
-. אתה יודע מה הבעיה שלך?, +
-בדרך כלל
-זו המחשבה שיש לך בעיה
-*/
+
 
     fun loadPost317() {
         val post = Post()
@@ -1045,6 +1041,43 @@ fun loadPost320() {
         }
         //  util.logi("Post3Lines  106    post=$post")
         drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost329() {
+        val post = Post()
+        with(post) {
+            postNum = 329
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2017/06/09/14/18/you-2386968_1280.png"
+            postText = arrayListOf(
+                "תהיה אתה,",
+                "ביננו, יש  לך סיכוי לא רע",
+                " שאפילו תצליח בזה. ",
+            )
+            val di = 0
+            val dd = 20
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1+ di, 0, 45+ dd),
+                arrayListOf(0, -1 + di, 0,10+ dd)
+            )
+
+            postTransparency =10
+            postTextSize = arrayListOf(0, 27)
+            val  backgroundColor = "#1E4174"
+            val textColor = "#DDA94B"
+            postFontFamily =110
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
 }
