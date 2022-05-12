@@ -895,6 +895,120 @@ fun loadPost320() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost325() {
+        val post = Post()
+        with(post) {
+            postNum = 325
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2016/08/12/20/14/river-1589616_1280.jpg"
+            postText = arrayListOf(
+                " הכעסים באים מהעבר ",
+                "החרדות מהעתיד",
+                "והחיים עצמם מהרגע הזה .",
+            )
+            val di = 0
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, 5 + di, 0, -1 + dd),
+                arrayListOf(0, 45+ di, 0, -1+ dd),
+                arrayListOf(0, 85 + di, 0,-1+ dd)
+            )
+
+            postTransparency =3
+            postTextSize = arrayListOf(0, 15)
+            val  backgroundColor = "#0A174E"
+            val textColor = "#F5D042"
+            postFontFamily =103
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 5, 10, 5)
+            postRadiuas = 15
+
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost326() {
+        val post = Post()
+        with(post) {
+            postNum = 326
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2022/01/16/15/55/people-6942460_1280.jpg"
+            postText = arrayListOf(
+                " כולם מדברים, ",
+                "רק מעטים",
+                " ממש אומרים משהו.",
+            )
+            val di = 0
+            val dd = 10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1+ di, 0, 35+ dd),
+                arrayListOf(0, -1 + di, 0,0+ dd)
+            )
+
+            postTransparency =10
+            postTextSize = arrayListOf(0, 15)
+            val  backgroundColor = "#CED46A"
+            val textColor = "#07553B"
+            postFontFamily =100
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 5, 10, 5)
+            postRadiuas = 15
+
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost327() {
+        val post = Post()
+        with(post) {
+            postNum = 327
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2014/02/23/09/17/man-272676_1280.jpg"
+            postText = arrayListOf(
+                " כשאתה סולד מדברים מסוימים, ",
+                "זה אומר משהו לגביך",
+                " לא על טיבם של הדברים עצמם. ",
+            )
+            val di = 0
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1+ di, 0, 40+ dd),
+                arrayListOf(0, -1 + di, 0,0+ dd)
+            )
+
+            postTransparency =5
+            postTextSize = arrayListOf(0, 22)
+            val  backgroundColor = "#ADEFD1"
+            val textColor = "#00203F"
+            postFontFamily =100
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+        //  util.logi("Post3Lines  106    post=$post")
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 
