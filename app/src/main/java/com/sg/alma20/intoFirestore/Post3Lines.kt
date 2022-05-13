@@ -1080,6 +1080,7 @@ fun loadPost320() {
          drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+    /**/
 }
 
 
