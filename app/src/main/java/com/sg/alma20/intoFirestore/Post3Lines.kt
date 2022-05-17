@@ -1080,7 +1080,121 @@ fun loadPost320() {
          drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
-    /**/
+
+    fun loadPost330() {
+        val post = Post()
+        with(post) {
+            postNum = 330
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2019/12/01/10/06/people-4665095_1280.jpg"
+            postText = arrayListOf(
+                " חביבי, ",
+                " אתה אורח בעולם הזה ",
+                " אז תתנהג בהתאם. ",
+            )
+            val di = 0
+            val dd =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 80 + dd),
+                arrayListOf(0, -1+ di, 0, 45+ dd),
+                arrayListOf(0, -1 + di, 0,10+ dd)
+            )
+
+            postTransparency =7
+            postTextSize = arrayListOf(0, 27)
+            val  backgroundColor = "#1E4174"
+            val textColor = "#DDA94B"
+            postFontFamily =110
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost331() {
+        val post = Post()
+        with(post) {
+            postNum = 331
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2015/07/15/06/42/womman-845710_1280.jpg"
+            postText = arrayListOf(
+                " האדם מסכן, ",
+                " ולא בגלל שהוא באמת מסכן ",
+                " כמו שהוא חושב את עצמו למסכן. ",
+            )
+            val di = 0
+            val dd =10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1+ di, 0, 40+ dd),
+                arrayListOf(0, -1 + di, 0,10+ dd)
+            )
+
+            postTransparency =7
+            postTextSize = arrayListOf(0, 14)
+            val  backgroundColor = "#1E4174"
+            val textColor = "#DDA94B"
+            postFontFamily =103
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+    /*
++החיים שלך
+ זה פיסה קטנה של אינסוף
+המוגבלת בזמן.
+*/
+    fun loadPost332() {
+        val post = Post()
+        with(post) {
+            postNum = 332
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2017/08/24/03/41/starry-sky-2675322_1280.jpg"
+            postText = arrayListOf(
+                " החיים שלך, ",
+                " זה פיסה קטנה של אינסוף ",
+                " המוגבלת בזמן. ",
+            )
+            val di = 0
+            val dd =10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 90 + dd),
+                arrayListOf(0, -1+ di, 0, 50+ dd),
+                arrayListOf(0, -1 + di, 0,10+ dd)
+            )
+
+            postTransparency =4
+            postTextSize = arrayListOf(0, 17)
+            val  backgroundColor = "#1E4174"
+            val textColor = "#DDA94B"
+            postFontFamily =103
+
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 0, 10, 0)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 
