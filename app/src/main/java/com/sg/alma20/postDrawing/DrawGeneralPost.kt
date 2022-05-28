@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.Resources
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
+import android.util.TypedValue
 import android.view.Gravity
 import android.widget.ImageView
 import android.widget.TextView
@@ -155,6 +156,19 @@ for (index in 1..post.postTextColor.size - 1) {
     //  util.logi("Draw GeneralPost 152  ${post.postTextColor.joinToString()}")
 }
 val ind = index - 1
+
+
+
+     //   val add=textView.lineHeight
+      textView.setLineSpacing(1f,1.4f)
+
+
+/*int lineHeight = textView.getLineHeight();
+float add = tvSampleText.getLineSpacingExtra();          // API 16+
+float mult = tvSampleText.getLineSpacingMultiplier(); */
+        /*textView.setLineSpacing(float add, float mult)*/
+
+
 textView.text = post.postText[ind]
 //  util.logi("Draw GeneralPost 149   ${post.postTextColor.joinToString()}")
    if (post.postTextColor[0] == CONSTANT) {

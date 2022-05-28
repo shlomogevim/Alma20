@@ -102,6 +102,50 @@ class Post8Lines(val context: Context) {
         util.sendPostToStringFirestore(post)
     }
 
+fun loadPost802() {
+    val post = Post()
+    with(post) {
+        postNum = 802
+        lineNum =8
+        imageUri ="https://cdn.pixabay.com/photo/2017/08/01/20/52/people-2567915_1280.jpg"
+        postText  = arrayListOf(
+            "כמה שאתה שומע יותר חדשות",
+            "יש לך פחות יידע מה קורה באמת,",
+            "כמה שיש לך יותר זמן פנוי ",
+            "אתה פחות פנו,",
+            "כמה שיש לך יותר קבוצות וואסאפ  ",
+            "יש לך פחות חברים,",
+            "כמה שאתה משתדל להבין את עצמך, ",
+            "אתה פחות יודע מי אתה. "
+        )
+        postBackground ="000000"
+        postTransparency =9
+        val di=0
+        val dd=0
+        postMargin = arrayListOf(
+            arrayListOf(0,-1+di,0,210+dd),
+            arrayListOf(0,-1+di,0,180+dd),
+            arrayListOf(0,-1+di, 0, 150+dd),
+            arrayListOf(0,-1+di, 0, 120+dd),
+            arrayListOf(0,-1+di, 0,90+dd),
+            arrayListOf(0,-1+di, 0,60+dd),
+            arrayListOf(0,-1+di, 0,30+dd),
+            arrayListOf(0,-1+di, 0,0+dd)
+        )
+        val size1=14
+        val size2=0
+        postTextSize =  arrayListOf(0, size1,size2)
+        postPadding =  arrayListOf(10, 0,10, 0)
+        val col = "#ffffff"
+        val col1 = "#4dd0e1"
+        postTextColor = arrayListOf(CONSTANT, col, col1, col1)
+        postFontFamily =103
+        postRadiuas = 15
+    }
+    drawPost.drawPostFire(post,layout)
+    util.sendPostToStringFirestore(post)
+}
+
     }
 
 
