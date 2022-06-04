@@ -142,6 +142,13 @@ class AddPostActivity : AppCompatActivity() {
 //post3Lines.loadPost345()
 //post3Lines.loadPost346()
 //post3Lines.loadPost347()
+//post3Lines.loadPost348()
+//post3Lines.loadPost349()
+//post3Lines.loadPost350()
+//post3Lines.loadPost351()
+//post3Lines.loadPost352()
+//post3Lines.loadPost353()
+//post3Lines.loadPost354()
 
 
 // post4Lines.loadPost400()
@@ -197,7 +204,9 @@ class AddPostActivity : AppCompatActivity() {
 // post4Lines.loadPost452()
 // post4Lines.loadPost453()
 // post4Lines.loadPost454()
- post4Lines.loadPost455()
+// post4Lines.loadPost455()
+// post4Lines.loadPost456()
+// post4Lines.loadPost457()
 
 //         post5Lines.loadPost500()
 //        post5Lines.loadPost501()
@@ -220,6 +229,8 @@ class AddPostActivity : AppCompatActivity() {
   // post5Lines.loadPost518()
 //   post5Lines.loadPost519()
 //   post5Lines.loadPost520()
+//   post5Lines.loadPost521()
+   post5Lines.loadPost522()
 
 //       post6Lines.loadPost600()
 //      post6Lines.loadPost601()
