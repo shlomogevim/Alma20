@@ -16,5 +16,7 @@ data class Post(
     var postTextColor:ArrayList<String> = arrayListOf<String>(),
     var postFontFamily:Int=0,
     var postRadiuas:Int=0,
-    val timestamp: Timestamp?=null
+    var timestamp: Timestamp?=null,
+    var lineSpacing:Float=1.4f,
+    var grade:Int=0
 )

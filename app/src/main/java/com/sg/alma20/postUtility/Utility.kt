@@ -57,6 +57,7 @@ class Utility {
         val postPadding: ArrayList<Int> = convertFromStringArrayToIntArry(postPadding1)
         val postMargin1 = snap?.getString(POST_MARGIN).toString()
         val postMargin: ArrayList<ArrayList<Int>> = convertFromStringArrayToIntArry2(postMargin1)
+        val postLineSpacing = snap?.getLong(POST_LINE_SPACING)!!.toFloat()
 
         val newPost1 = Post(
             postId,
@@ -72,7 +73,8 @@ class Utility {
             postTextColor,
             postFontFamily,
             postRadius,
-            timestamp
+            timestamp,
+            postLineSpacing
         )
         //logi("Utility 207   post=${newPost1}")
         return newPost1
@@ -414,6 +416,7 @@ class Utility {
             data[POST_FONT_FAMILY] = postFontFamily
             data[POST_RADIUS] = postRadiuas
             data[POST_TIME_STAMP] = FieldValue.serverTimestamp()
+            data[POST_LINE_SPACING]=lineSpacing
         }
         FirebaseFirestore.getInstance().collection(POST_REF).document(post.postNum.toString())
             .set(data)

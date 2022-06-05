@@ -1970,6 +1970,41 @@ fun loadPost353() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost355() {
+        val post = Post()
+        with(post) {
+            postNum = 355
+            lineNum = 3
+            imageUri = "https://cdn.pixabay.com/photo/2015/09/25/17/19/brick-957823_1280.jpg"
+            postText = arrayListOf(
+                " אופטימיות ",
+                " זה לראות את המשך הדרך ",
+                " גם אחרי הקיר. ",
+            )
+            val di = 0
+            val dd =20
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0,110 + dd),
+                arrayListOf(0, -1+ di, 0, 55+ dd),
+                arrayListOf(0, -1 + di, 0,0+ dd)
+            )
+            postTransparency =6
+            postTextSize = arrayListOf(0, 24)
+            val  backgroundColor = "#0A174E"
+            val textColor = "#F5D042"
+            postFontFamily =100
+            postBackground =util. improveColorString(backgroundColor)
+            val textcolo=util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(10, 5, 10, 5)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 

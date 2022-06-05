@@ -160,7 +160,7 @@ val ind = index - 1
 
 
      //   val add=textView.lineHeight
-      textView.setLineSpacing(1f,1.4f)
+      textView.setLineSpacing(1f,post.lineSpacing)
 
 
 /*int lineHeight = textView.getLineHeight();
