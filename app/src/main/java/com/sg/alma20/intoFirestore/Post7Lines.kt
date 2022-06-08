@@ -135,5 +135,85 @@ class Post7Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost703() {
+        var post = Post()
+        with(post) {
+            postNum = 703
+            lineNum = 7
+            imageUri = "https://cdn.pixabay.com/photo/2017/02/15/11/50/forest-2068375_1280.jpg"
+            postText = arrayListOf(
+                "החיים בשבילך הם בעיקר תפיסת עולם",
+                " בתוך אינסוף של קיום, ",
+                " תחשוב קטן הם יהיו קטנים ",
+                " תחשוב גדול הם יהיו גדולים ",
+                " תחשוב מדכא הן יהיו מדכאים ",
+                " תחשוב אופטימי הם יהיו אופטימיים ",
+                " תחשוב אינסוף הם יהיו אינסופיים. "
+            )
+            val di = 0
+            val dd = 5
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 210 + dd),
+                arrayListOf(0, -1 + di, 0, 175 + dd),
+                arrayListOf(0, -1 + di, 0, 140 + dd),
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTextSize = arrayListOf(0, 14)
+            postTransparency = 8
+            postBackground = "#2BAE66"
+            val textColor = "ffffff"
+            postFontFamily = 103
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(10, 5,10, 5)
+            postRadiuas = 15
+            lineSpacing=1.2f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost704() {
+        var post = Post()
+        with(post) {
+            postNum = 704
+            lineNum = 7
+            imageUri = "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg"
+            postText = arrayListOf(
+                " דיכאון ",
+                " זה להיות בטוח שברגע זה",
+                "  העולם נגמר בגבול המודעות שלך, ",
+                " רווחה ",
+                " זה לדעת ברגע זה ",
+                " שהעולם ממשיך בכל מקרה ",
+                " הרבה מעבר לגבול המודעות שלך. "
+            )
+            val di = 0
+            val dd = 5
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 210 + dd),
+                arrayListOf(0, -1 + di, 0, 175 + dd),
+                arrayListOf(0, -1 + di, 0, 140 + dd),
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTextSize = arrayListOf(0, 16)
+            postTransparency = 0
+            postBackground = "#2BAE66"
+            val textColor = "ffffff"
+            postFontFamily = 103
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 5,0, 5)
+            postRadiuas = 15
+            lineSpacing=1.2f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
