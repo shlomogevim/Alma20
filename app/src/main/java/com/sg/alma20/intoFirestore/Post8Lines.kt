@@ -146,6 +146,50 @@ fun loadPost802() {
     util.sendPostToStringFirestore(post)
 }
 
+     fun loadPost803() {
+       val post = Post()
+       with(post) {
+           postNum = 803
+           lineNum =8
+           imageUri ="https://cdn.pixabay.com/photo/2016/08/23/12/37/files-1614223_1280.jpg"
+           postText  = arrayListOf(
+               " אתה דמות מסרט, ",
+               "הזמן המקום והזהות דוחקים אותך לתפקיד חייך,",
+               " אתה מדבר טקסטים ידועים ",
+               " חולם חלומות משומשים ",
+               "ונפגע מאותם קצוות ביום יום. ",
+               " יש אומנם הרבה חיים מעבר לתפקיד הזה ",
+               " אבל אתה לא משתמש בהם ",
+               " כי זה מחוץ לתפקיד שלך. "
+           )
+           val di=0
+           val dd=30
+           postMargin = arrayListOf(
+               arrayListOf(0,-1+di,0,270+dd),
+               arrayListOf(0,-1+di,0,210+dd),
+               arrayListOf(0,-1+di, 0, 180+dd),
+               arrayListOf(0,-1+di, 0, 150+dd),
+               arrayListOf(0,-1+di, 0,120+dd),
+               arrayListOf(0,-1+di, 0,60+dd),
+               arrayListOf(0,-1+di, 0,30+dd),
+               arrayListOf(0,-1+di, 0,-5+dd)
+           )
+           postTransparency =9
+          postTextSize =  arrayListOf(0, 14)
+           val backgroundColor = "0A174E"
+           val textColor = "#F5D042"
+           postFontFamily =103
+           postBackground = util.improveColorString(backgroundColor)
+           val textcolo = util.improveColorString(textColor)
+           val col = "#$textcolo"
+           postTextColor = arrayListOf(CONSTANT, col)
+           postPadding = arrayListOf(0, 5, 0, 5)
+           postRadiuas = 16
+           lineSpacing=1.3f
+       }
+       drawPost.drawPostFire(post,layout)
+       util.sendPostToStringFirestore(post)
+   }
     }
 
 
