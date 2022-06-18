@@ -156,9 +156,6 @@ for (index in 1..post.postTextColor.size - 1) {
     //  util.logi("Draw GeneralPost 152  ${post.postTextColor.joinToString()}")
 }
 val ind = index - 1
-
-
-
      //   val add=textView.lineHeight
       textView.setLineSpacing(1f,post.lineSpacing)
 

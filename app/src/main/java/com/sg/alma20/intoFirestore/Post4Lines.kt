@@ -2515,6 +2515,43 @@ fun loadPost460() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost469() {
+        val post = Post()
+        with(post) {
+            postNum = 469
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2017/04/27/20/17/dandelion-2266558_1280.jpg"
+            postText = arrayListOf(
+                " הרוחות הרעות מנשבות מקצה עולם עד קצהו ",
+                " ואין לך סיכוי שהם לא יכו בך מדי פעם על הפנים, ",
+                " הרוחות הטובות מנשבות רק במקומות ספורים ",
+                " וצריך התכוונות לטוב כדי להרגיש אותם. "
+            )
+            val di = 0
+            val dd = 0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 210 + dd),
+                arrayListOf(0, -1 + di, 0, 140 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =0
+            postTextSize = arrayListOf(0, 18)
+            val backgroundColor = "#606060"
+            val textColor = "#D6ED17"
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.3f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 

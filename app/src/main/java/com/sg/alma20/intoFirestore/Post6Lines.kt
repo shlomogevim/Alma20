@@ -498,5 +498,46 @@ fun loadPost607() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost612() {
+        val post = Post()
+        with(post) {
+            postNum = 612
+            lineNum =6
+            imageUri = "https://cdn.pixabay.com/photo/2017/01/18/16/53/earth-1990298_1280.jpg"
+            postText = arrayListOf(
+                " אתה כמו לווין אבוד בחלל ",
+                " המסתובב סביב כדור הארץ, ",
+                " היחס שלך לעולם ",
+                " הוא נקודת המבט הרגעית שלך על הכדור, ",
+                " פעם אתה קולט אותו בצידו האפל ",
+                "  ופעם בצידו המואר. "
+            )
+            val di =0
+            val du =0
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + du, 0, -1 + di),
+                arrayListOf(0,35+ du, 0, -1 + di),
+                arrayListOf(0,70+ du, 0, -1 + di),
+                arrayListOf(0,105 + du, 0, -1 + di),
+                arrayListOf(0, 140+ du, 0,-1 + di),
+                arrayListOf(0,175 + du, 0, -1 + di)
+            )
+
+            postTransparency =10
+            postTextSize = arrayListOf(0, 13)
+            postBackground = "#331B3F"
+            val textColor = "#ACC7B4"
+            postFontFamily =103
+
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0,5)
+            postRadiuas = 15
+
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 

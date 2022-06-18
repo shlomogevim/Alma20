@@ -224,6 +224,7 @@ class AddPostActivity : AppCompatActivity() {
 // post4Lines.loadPost466()
 // post4Lines.loadPost467()
 // post4Lines.loadPost468()
+ post4Lines.loadPost469()
 
 //         post5Lines.loadPost500()
 //        post5Lines.loadPost501()
@@ -264,6 +265,7 @@ class AddPostActivity : AppCompatActivity() {
  //post6Lines.loadPost609()
 // post6Lines.loadPost610()
 // post6Lines.loadPost611()
+// post6Lines.loadPost612()
 
     //      post7Lines.loadPost700()
 //     post7Lines.loadPost701()
@@ -274,7 +276,7 @@ class AddPostActivity : AppCompatActivity() {
 
 //     post8Lines.loadPost801()
 //     post8Lines.loadPost802()
-     post8Lines.loadPost803()
+//     post8Lines.loadPost803()
 
    //   post9Lines.loadPost900()
 
