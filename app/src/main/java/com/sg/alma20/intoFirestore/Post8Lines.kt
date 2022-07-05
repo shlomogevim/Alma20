@@ -155,9 +155,9 @@ fun loadPost802() {
            postText  = arrayListOf(
                " אתה דמות מסרט, ",
                "הזמן המקום והזהות דוחקים אותך לתפקיד חייך,",
-               " אתה מדבר טקסטים ידועים ",
+               " מדבר את אותם טקסטים ידועים ",
                " חולם חלומות משומשים ",
-               "ונפגע מאותם קצוות ביום יום. ",
+               "ונפגע מאותם קצוות חיים ביום יום. ",
                " יש אומנם הרבה חיים מעבר לתפקיד הזה ",
                " אבל אתה לא משתמש בהם ",
                " כי זה מחוץ לתפקיד שלך. "
@@ -185,7 +185,7 @@ fun loadPost802() {
            postTextColor = arrayListOf(CONSTANT, col)
            postPadding = arrayListOf(0, 5, 0, 5)
            postRadiuas = 16
-           lineSpacing=1.3f
+           lineSpacing=1.4f
        }
        drawPost.drawPostFire(post,layout)
        util.sendPostToStringFirestore(post)

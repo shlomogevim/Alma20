@@ -507,7 +507,7 @@ fun loadPost607() {
             imageUri = "https://cdn.pixabay.com/photo/2017/01/18/16/53/earth-1990298_1280.jpg"
             postText = arrayListOf(
                 " אתה כמו לווין אבוד בחלל ",
-                " המסתובב סביב כדור הארץ, ",
+                " שנע סביב כדור הארץ, ",
                 " היחס שלך לעולם ",
                 " הוא נקודת המבט הרגעית שלך על הכדור, ",
                 " פעם אתה קולט אותו בצידו האפל ",
@@ -523,7 +523,6 @@ fun loadPost607() {
                 arrayListOf(0, 140+ du, 0,-1 + di),
                 arrayListOf(0,175 + du, 0, -1 + di)
             )
-
             postTransparency =10
             postTextSize = arrayListOf(0, 13)
             postBackground = "#331B3F"
@@ -539,5 +538,121 @@ fun loadPost607() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+        fun loadPost613() {
+        val post = Post()
+        with(post) {
+            postNum = 613
+            lineNum =6
+            imageUri = "https://images.unsplash.com/photo-1575893363557-0aa0ab80e225?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            postText = arrayListOf(
+                " דוח מצב זמני : ",
+                " אתה נמצא על כוכב לכת כלשהו ",
+                " בצורה מוגדרת ובתפקיד לא ידוע, ",
+                " הגוף מוכר לך בתשוקותיו ומכאוביו, ",
+                " אבל אתה לא ברור ",
+                "  מלבד היכולת הזאת לראות ולחוות. "
+            )
+            val di =-10
+            val du =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + du, 0, 185 + di),
+                arrayListOf(0,-1+ du, 0, 150 + di),
+                arrayListOf(0,-1+ du, 0, 115+ di),
+                arrayListOf(0,-1+ du, 0, 80 + di),
+                arrayListOf(0, -1+ du, 0,45 + di),
+                arrayListOf(0,-1 + du, 0,10 + di)
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0, 13)
+            postBackground = "#CCF381"
+            val textColor = "#4831D4"
+            postFontFamily =103
+
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0,5)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+fun loadPost614() {
+    val post = Post()
+    with(post) {
+        postNum = 614
+        lineNum =6
+        imageUri = "https://cdn.pixabay.com/photo/2016/09/01/19/07/boy-1637188_1280.jpg"
+        postText = arrayListOf(
+            " המוצר הכי מיותר בעולם ",
+            " שהאדם יוצר על בסיס יומי ",
+            " הם עוגמות הנפש, ",
+            " הם ממש לא שימושיות, ",
+            " מבאסות לך את החיים ",
+            "  ומקשות עליך להיות מה שאתה. "
+        )
+        val di =10
+        val du =0
+        postMargin = arrayListOf(
+            arrayListOf(0, -1 + du, 0, 185 + di),
+            arrayListOf(0,-1+ du, 0, 150 + di),
+            arrayListOf(0,-1+ du, 0, 115+ di),
+            arrayListOf(0,-1+ du, 0, 80 + di),
+            arrayListOf(0, -1+ du, 0,45 + di),
+            arrayListOf(0,-1 + du, 0,10 + di)
+        )
+        postTransparency =0
+        postTextSize = arrayListOf(0, 16)
+        postBackground = "#CCF381"
+        val textColor = "#DDA94B"
+        postFontFamily =103
+
+        val col = "#$textColor"
+        postTextColor = arrayListOf(CONSTANT, col)
+        postPadding = arrayListOf(0,5, 0,5)
+        postRadiuas = 15
+    }
+    drawPost.drawPostFire(post, layout)
+    util.sendPostToStringFirestore(post)
 }
+
+    fun loadPost615() {
+        val post = Post()
+        with(post) {
+            postNum = 615
+            lineNum =6
+            imageUri = "https://cdn.pixabay.com/photo/2019/06/08/11/30/people-4259948_1280.jpg"
+            postText = arrayListOf(
+                " אלוהי הרייטינג  ",
+                " נבחר כאל הכי פופולרי ביקום, ",
+                " אני יודע שזה לא צודק ",
+                " ויש אחרים ששווים יותר ",
+                " אבל זה העולם שהאדם יצר סביבו ",
+                "  בצלמו ובדמות. "
+            )
+            val di =0
+            val du =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + du, 0, 185 + di),
+                arrayListOf(0,-1+ du, 0, 150 + di),
+                arrayListOf(0,-1+ du, 0, 115+ di),
+                arrayListOf(0,-1+ du, 0, 80 + di),
+                arrayListOf(0, -1+ du, 0,45 + di),
+                arrayListOf(0,-1 + du, 0,10 + di)
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0, 16)
+            postBackground = "#02343F"
+            val textColor = "#F0EDCC"
+            postFontFamily =103
+
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0,5)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+  }
 

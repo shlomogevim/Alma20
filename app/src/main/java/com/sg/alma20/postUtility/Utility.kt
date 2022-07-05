@@ -416,7 +416,7 @@ class Utility {
             data[POST_FONT_FAMILY] = postFontFamily
             data[POST_RADIUS] = postRadiuas
             data[POST_TIME_STAMP] = FieldValue.serverTimestamp()
-            data[POST_LINE_SPACING]=lineSpacing
+            data[POST_LINE_SPACING]=lineSpacing.toDouble()
         }
         FirebaseFirestore.getInstance().collection(POST_REF).document(post.postNum.toString())
             .set(data)
