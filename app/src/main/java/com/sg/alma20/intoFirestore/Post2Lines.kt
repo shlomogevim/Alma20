@@ -1862,5 +1862,37 @@ fun loadPost245() {
         drawPost.drawPostFire(post,layout)
         util.sendPostToStringFirestore(post)
     }
+fun loadPost258() {
+    val post = Post()
+    with(post) {
+        postNum = 258
+        lineNum = 2
+        imageUri ="https://cdn.pixabay.com/photo/2020/06/18/18/48/highway-5314645_1280.jpg"
+        postText =  arrayListOf(
+            " אין חופש אמיתי ",
+            " ללא חרדה מהבלתי ידוע. "
+        )
+        val di =0
+        val du=20
+        postMargin =  arrayListOf(
+            arrayListOf(0, 0+du, 0,-1  +di),
+            arrayListOf(0,50+du, 0, -1+di)
+        )
+        postTransparency =0
+        postTextSize = arrayListOf(0,22)
+        val  backgroundColor = "#ACC7B4"
+        val textColor = "#331B3F"
+        postFontFamily =100
 
+        postBackground =util. improveColorString(backgroundColor)
+        val textcolo=util.improveColorString(textColor)
+        val col = "#$textcolo"
+        postTextColor = arrayListOf(CONSTANT, col)
+        postPadding = arrayListOf(0,5,0,5)
+        postRadiuas = 15
+        lineSpacing=0.9f
+    }
+    drawPost.drawPostFire(post,layout)
+    util.sendPostToStringFirestore(post)
+}
 }

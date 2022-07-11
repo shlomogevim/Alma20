@@ -215,5 +215,85 @@ class Post7Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost705() {
+        var post = Post()
+        with(post) {
+            postNum = 705
+            lineNum = 7
+            imageUri = "https://cdn.pixabay.com/photo/2015/01/09/17/34/opera-594592_1280.jpg"
+            postText = arrayListOf(
+                " בחיים שלך ",
+                " אתה השחקן הראשי ",
+                "  אתה המבקר האכזרי ",
+                " והקהל המשועמם, ",
+                " חוסר השקט הפנימי שלך ",
+                " נוצר בגלל הכורח ",
+                " להכניס את כולם בגוף אחד. "
+            )
+            val di = 0
+            val dd = 5
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 180 + dd),
+                arrayListOf(0, -1 + di, 0, 150 + dd),
+                arrayListOf(0, -1 + di, 0, 120 + dd),
+                arrayListOf(0, -1 + di, 0, 90 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
+                arrayListOf(0, -1 + di, 0, 30 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTextSize = arrayListOf(0, 16)
+            postTransparency = 5
+            postBackground = "#0A174E"
+            val textColor = "#F5D042"
+            postFontFamily = 103
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 0,0, 0)
+            postRadiuas = 15
+            lineSpacing=1.2f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost706() {
+        var post = Post()
+        with(post) {
+            postNum = 706
+            lineNum = 7
+            imageUri = "https://cdn.pixabay.com/photo/2020/10/29/15/32/beach-5696492_1280.jpg"
+            postText = arrayListOf(
+                " האדם רואה רק את הצל שלו  ",
+                " אבל הוא לא רואה את עצמו, ",
+                "  האדם יודע רק מה הוא חושב  ",
+                " אבל הוא לא יודע מי זה החושב, ",
+                " ולמען הסדר בעולמך רצוי שתדע  ",
+                " את הצל שלך כצל ",
+                " והמחשבה כמחשבה. "
+            )
+            val di = 0
+            val dd = 5
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 180 + dd),
+                arrayListOf(0, -1 + di, 0, 150 + dd),
+                arrayListOf(0, -1 + di, 0, 120 + dd),
+                arrayListOf(0, -1 + di, 0, 90 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
+                arrayListOf(0, -1 + di, 0, 30 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTextSize = arrayListOf(0, 16)
+            postTransparency = 5
+            postBackground = "#0A174E"
+            val textColor = "#F5D042"
+            postFontFamily = 103
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 0,0, 0)
+            postRadiuas = 15
+            lineSpacing=1.2f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 

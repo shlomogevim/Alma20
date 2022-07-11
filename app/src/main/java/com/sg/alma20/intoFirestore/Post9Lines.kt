@@ -61,6 +61,7 @@ class Post9Lines(val context: Context) {
         drawPost.drawPostFire(post,layout)
         util.sendPostToStringFirestore(post)
     }
+
 }
 
  /*

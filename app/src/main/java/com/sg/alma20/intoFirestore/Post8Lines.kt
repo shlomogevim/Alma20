@@ -190,6 +190,96 @@ fun loadPost802() {
        drawPost.drawPostFire(post,layout)
        util.sendPostToStringFirestore(post)
    }
+
+    fun loadPost804() {
+        val post = Post()
+        with(post) {
+            postNum = 804
+            lineNum =8
+            imageUri ="https://cdn.pixabay.com/photo/2017/05/30/16/35/galaxy-2357504_1280.jpg"
+            postText  = arrayListOf(
+                "  האדם בבוקר השכם  ",
+                "  הוא כרוח אלוהים על פני תהום ",
+                "ואחר כך הוא יוצר לעצמו את הים והשמים ",
+                " את היבשה את העשב ואת בעלי החיים ",
+                " ובסוף הוא יוצר את עצמו ברגע שהוא נכנס לדמות שלו. ",
+                 " ומבחינתי הייתי מעדיך לרחף עוד קצת ",
+                " כרוח אלוהים על פני המים ",
+                " לפני כל עבודת הבריאה הזו. "
+            )
+            val di=0
+            val dd=-30
+            postMargin = arrayListOf(
+                arrayListOf(0,-1+di,0,270+dd),
+                arrayListOf(0,-1+di,0,240+dd),
+                arrayListOf(0,-1+di, 0, 210+dd),
+                arrayListOf(0,-1+di, 0, 180+dd),
+                arrayListOf(0,-1+di, 0,120+dd),
+                arrayListOf(0,-1+di, 0,90+dd),
+                arrayListOf(0,-1+di, 0,60+dd),
+                arrayListOf(0,-1+di, 0,30+dd)
+            )
+            postTransparency =4
+            postTextSize =  arrayListOf(0, 14)
+            val backgroundColor = "0A174E"
+            val textColor = "#F5D042"
+            postFontFamily =103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 16
+            lineSpacing=1.4f
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost805() {
+        val post = Post()
+        with(post) {
+            postNum = 805
+            lineNum =8
+            imageUri ="https://cdn.pixabay.com/photo/2018/12/29/19/53/food-3902073_1280.jpg"
+            postText  = arrayListOf(
+                "  ג'אנק-פוד כמו  ",
+                "  המבורגרים פיצות ובורקסים ",
+                " טעימים בטירוף ",
+                " אבל דופקים לך את הבטן, ",
+                " ג'אנק-מודעות כמו ",
+                " פוליטיקה רכילות ואתרים ברשת ",
+                " מעניינים בטירוף ",
+                " אבל שורפים לך את המודעות. "
+            )
+            val di=0
+            val dd=20
+            postMargin = arrayListOf(
+                arrayListOf(0,-1+di,0,210+dd),
+                arrayListOf(0,-1+di,0,180+dd),
+                arrayListOf(0,-1+di, 0, 150+dd),
+                arrayListOf(0,-1+di, 0, 120+dd),
+                arrayListOf(0,-1+di, 0,90+dd),
+                arrayListOf(0,-1+di, 0,60+dd),
+                arrayListOf(0,-1+di, 0,30+dd),
+                arrayListOf(0,-1+di, 0,0+dd)
+            )
+            postTransparency =6
+            postTextSize =  arrayListOf(0, 14)
+            val backgroundColor = "0A174E"
+            val textColor = "#F5D042"
+            postFontFamily =103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0, 0, 0, 0)
+            postRadiuas = 16
+            lineSpacing=1.4f
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
     }
 
 

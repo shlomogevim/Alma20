@@ -654,5 +654,43 @@ fun loadPost614() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost616() {
+        val post = Post()
+        with(post) {
+            postNum = 616
+            lineNum =6
+            imageUri = "https://cdn.pixabay.com/photo/2019/07/17/22/06/sri-lanka-4345091_1280.jpg"
+            postText = arrayListOf(
+                " שהייתי קטן  ",
+                " רציתי להכיר את העולם, ",
+                " שהייתי כבר יותר גדול ",
+                " השתדלתי להסתדר אתו כמה שיותר, ",
+                " ועכשיו בגילי המופלג  ",
+                "  אני מסתפק בכמה שפחות להיפגע ממנו. "
+            )
+            val di =0
+            val du =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + du, 0, 185 + di),
+                arrayListOf(0,-1+ du, 0, 150 + di),
+                arrayListOf(0,-1+ du, 0, 115+ di),
+                arrayListOf(0,-1+ du, 0, 80 + di),
+                arrayListOf(0, -1+ du, 0,45 + di),
+                arrayListOf(0,-1 + du, 0,10 + di)
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0, 13)
+            postBackground = "#02343F"
+            val textColor = "#F0EDCC"
+            postFontFamily =103
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0,5)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
   }
 
