@@ -402,7 +402,7 @@ class Utility {
     fun sendPostToStringFirestore(post: Post) {
         val data = HashMap<String, Any>()
         with(post) {
-            data[POST_ID] = 1
+            data[POST_ID] = postId
             data[POST_NUM] = postNum
             data[POST_LINE_NUM] = lineNum
             data[POST_IMAGE_URI] = imageUri

@@ -3228,6 +3228,275 @@ fun loadPost480() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+        fun loadPost488() {
+        val post = Post()
+        with(post) {
+            postNum = 488
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2017/01/12/17/30/warm-and-cozy-1975215_1280.jpg"
+            postText = arrayListOf(
+                " אתה חי עם החיים שלך כבר המון שנים  ",
+                " ולא ממש מכיר אותם,  ",
+                " זה מרגיש יותר כמו נישואי נוחות ",
+                "  מסיפור אהבה. "
+            )
+            val di = 0
+            val dd =20
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0, 17)
+            val backgroundColor = "#A4193D"
+            val textColor = "#FFDFB9"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.3f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost489() {
+        val post = Post()
+        with(post) {
+            postNum = 489
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2013/02/05/21/05/running-78192_1280.jpg"
+            postText = arrayListOf(
+                " המפסידים בחיים ",
+                " אלה אינם אלה שהגיעו במקומות האחרונים,  ",
+                " אלה אותם ",
+                "  שלא משתתפים בפועל בהפעלה הזו. "
+            )
+            val di = 0
+            val dd =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 130 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0, 15)
+            val backgroundColor = "#00203F"
+            val textColor = "#ADEFD1"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.3f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost490() {
+        val post = Post()
+        with(post) {
+            postNum = 490
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2016/11/23/18/07/dog-1854123_1280.jpg"
+            postText = arrayListOf(
+                " הים הגדול ממשיך עד מעבר לאופק  ",
+                " אבל הצעקות של השכנה שמדברת בפלאפון  ",
+                " ממלאות לי את כל חלל המודעות ",
+                "  כי אני יצור שבנוי ברובו לעיסוק בהבלים.  "
+            )
+            val di = 0
+            val dd =20
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 135 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0, 14)
+            val backgroundColor = "#00203F"
+            val textColor = "#ADEFD1"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0, 5)
+            postRadiuas = 16
+            lineSpacing = 1.5f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost4901() {
+        val post = Post()
+        with(post) {
+            postNum = 4901
+            postId= 63.toString()
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2018/04/29/01/23/skin-3358873_1280.jpg"
+            postText = arrayListOf(
+                " החיים שלך  ",
+                " זה לא מה שקורה לך, ",
+                " אלא ",
+                "  מה שאתה מבין מכל מזה.  "
+            )
+            val di = 0
+            val dd =20
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =5
+            postTextSize = arrayListOf(0, 18)
+            val backgroundColor = "#101820"
+            val textColor = "#F2AA4C"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.5f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost4902() {
+        val post = Post()
+        with(post) {
+            postNum = 4902
+            postId= 65.toString()
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2016/11/29/04/17/bonfire-1867275_1280.jpg"
+            postText = arrayListOf(
+                " הפייסבוק   ",
+                " זאת מדורת השבט המודרנית, ",
+                " רחוק מידי תתקרר ",
+                "  קרוב מידי תישרף.  "
+            )
+            val di = 0
+            val dd =10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0, 18)
+            val backgroundColor = "#101820"
+            val textColor = "#F2AA4C"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.5f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost4903() {
+        val post = Post()
+        with(post) {
+            postNum = 4903
+            postId= 72.toString()
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2017/03/07/20/45/cog-wheels-2125169_1280.jpg"
+            postText = arrayListOf(
+                " האדם מכיר את עצמו  ",
+                " ומכיר את העולם ",
+                " אבל הוא לא מסוגל להבין ",
+                "  איך זה עובד ביחד.  "
+            )
+            val di = 0
+            val dd =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 105 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =4
+            postTextSize = arrayListOf(0, 18)
+            val backgroundColor = "#101820"
+            val textColor = "#F2AA4C"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.5f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+
+    fun loadPost4904() {
+        val post = Post()
+        with(post) {
+            postNum = 4904
+            postId= 76.toString()
+            lineNum = 4
+            imageUri = "https://cdn.pixabay.com/photo/2017/10/27/15/52/jaguar-2894706_1280.jpg"
+            postText = arrayListOf(
+                " ככול שההישרדות היומיומית של האדם  ",
+                " נכחדת אט אט עם הקדמה הטכנולוגית,  ",
+                " היכולת שלו לבזבז את החיים שלו ",
+                "  מתפתחת לרמה מרשימה.  "
+            )
+            val di = 0
+            val dd =10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 90 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
+                arrayListOf(0, -1 + di, 0, 30 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTransparency =10
+            postTextSize = arrayListOf(0, 14)
+            val backgroundColor = "#F9EBDE"
+            val textColor = "#815854"
+
+            postFontFamily = 103
+            postBackground = util.improveColorString(backgroundColor)
+            val textcolo = util.improveColorString(textColor)
+            val col = "#$textcolo"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,0, 0, 0)
+            postRadiuas = 16
+            lineSpacing = 1.5f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
 

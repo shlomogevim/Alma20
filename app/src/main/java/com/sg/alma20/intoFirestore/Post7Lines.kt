@@ -295,5 +295,45 @@ class Post7Lines(val context: Context) {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+
+    fun loadPost707() {
+        var post = Post()
+        with(post) {
+            postNum = 707
+            lineNum = 7
+            imageUri = "https://cdn.pixabay.com/photo/2018/02/03/15/40/landscape-3127859_1280.jpg"
+            postText = arrayListOf(
+                " הדרך לחיים נכונים היא  ",
+                " לעשות את הדבר הנכון בזמן הנכון ",
+                "  ואפילו   ",
+                " אם זה לא נראה לך, ",
+                " או שאתה לא בנוי לזה ",
+                " או שאין לך זמן לזה  ",
+                " או שלא נוח לך כרגע. "
+            )
+            val di = 0
+            val dd = 5
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 180 + dd),
+                arrayListOf(0, -1 + di, 0, 150 + dd),
+                arrayListOf(0, -1 + di, 0, 120 + dd),
+                arrayListOf(0, -1 + di, 0, 90 + dd),
+                arrayListOf(0, -1 + di, 0, 60 + dd),
+                arrayListOf(0, -1 + di, 0, 30 + dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            postTextSize = arrayListOf(0, 15)
+            postTransparency =0
+            postBackground = "#0A174E"
+            val textColor = "#F5D042"
+            postFontFamily = 103
+            postTextColor = arrayListOf(CONSTANT, "#$textColor")
+            postPadding = arrayListOf(0, 0,0, 0)
+            postRadiuas = 15
+            lineSpacing=1.2f
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 

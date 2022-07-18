@@ -62,6 +62,51 @@ class Post9Lines(val context: Context) {
         util.sendPostToStringFirestore(post)
     }
 
+    fun loadPost901() {
+        val post = Post()
+        with(post) {
+            postNum = 901
+            lineNum = 9
+            imageUri = "https://cdn.pixabay.com/photo/2013/04/07/21/29/hotel-hall-101634_1280.jpg"
+            postText = arrayListOf(
+                " בסוף המסדרון הזה יש חדר גדול ",
+                " אם לא תהיה בתנועה ",
+                " תהיה תקוע במסדרון כל היום, ",
+                " ולמציאות פנים רבות ",
+                " הכוזבים מכחישים את המסדרון ",
+                " הדיכאוניים מכחישים את ההליכה ",
+                " הפסימיים לא מאמינים שיש סוף למסדרון הזה ",
+                "  רודפי הנחמה גוררים רגלים  ",
+                "  ואני פעם זה ופעם זה.  "
+            )
+            postBackground = "1E4174"
+            postTransparency =10
+            val di = 0
+            val dd = 10
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + di, 0, 305 + dd),
+                arrayListOf(0, -1 + di, 0, 270 + dd),
+                arrayListOf(0, -1 + di, 0, 235 + dd),
+                arrayListOf(0, -1 + di, 0, 200 + dd),
+                arrayListOf(0, -1 + di, 0, 165 + dd),
+                arrayListOf(0, -1 + di, 0, 130 + dd),
+                arrayListOf(0, -1 + di, 0, 70 + dd),
+                arrayListOf(0, -1 + di, 0, 35+ dd),
+                arrayListOf(0, -1 + di, 0, 0 + dd)
+            )
+            val size1 = 16
+            val size2 = 0
+            postTextSize = arrayListOf(0, size1, size2)
+            postPadding = arrayListOf(0, 0, 0, 0)
+            val col = "#DDA94B"
+             postTextColor = arrayListOf(CONSTANT, col)
+            postFontFamily = 103
+            postRadiuas = 15
+            lineSpacing=1.2f
+        }
+        drawPost.drawPostFire(post,layout)
+        util.sendPostToStringFirestore(post)
+    }
 }
 
  /*

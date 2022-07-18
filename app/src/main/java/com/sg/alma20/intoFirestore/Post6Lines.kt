@@ -692,5 +692,79 @@ fun loadPost614() {
         drawPost.drawPostFire(post, layout)
         util.sendPostToStringFirestore(post)
     }
+     fun loadPost617() {
+        val post = Post()
+        with(post) {
+            postNum = 617
+            lineNum =6
+            imageUri = "https://cdn.pixabay.com/photo/2017/10/21/15/04/sea-2874928_1280.jpg"
+            postText = arrayListOf(
+                " הזמן שעובר  ",
+                " הוא השובל שאתה משאיר אחריך ",
+                " במסע הזה שלך באוקיאנוס הקיום, ",
+                " ומי שמצליח לראות את השובל הזה ",
+                " נעלם לאט לתוך המים הגדולים  ",
+                " מודע לתנועה שלו בחיים. "
+            )
+            val di =0
+            val du =0
+            postMargin = arrayListOf(
+                arrayListOf(0, -1 + du, 0, 185 + di),
+                arrayListOf(0,-1+ du, 0, 150 + di),
+                arrayListOf(0,-1+ du, 0, 115+ di),
+                arrayListOf(0,-1+ du, 0, 80 + di),
+                arrayListOf(0, -1+ du, 0,45 + di),
+                arrayListOf(0,-1 + du, 0,10 + di)
+            )
+            postTransparency =8
+            postTextSize = arrayListOf(0, 15)
+            postBackground = "#1E4174"
+            val textColor = "#DDA94B"
+            postFontFamily =103
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0,0)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
+        fun loadPost618() {
+        val post = Post()
+        with(post) {
+            postNum = 618
+            lineNum =6
+            imageUri = "https://cdn.pixabay.com/photo/2022/01/25/19/13/nature-6967075_1280.jpg"
+            postText = arrayListOf(
+                 " אי אפשר להבין את הגוף האנושי ",
+                " אבל אפשר לראות את התנועה שלו, ",
+                " הגוף הזה מובל על ידי המודעות  ",
+                " ככלב ההולך אחרי אדונו, ",
+                " אי אפשר לראות המודעות הזו ",
+                " אבל אפשר להבין אותה. "
+            )
+            val di =0
+            val du =0
+            postMargin = arrayListOf(
+                arrayListOf(0, 0 + du, 0, -1 + di),
+                arrayListOf(0,35+ du, 0, -1 + di),
+                arrayListOf(0,70+ du, 0, -1 + di),
+                arrayListOf(0,105 + du, 0, -1 + di),
+                arrayListOf(0, 140+ du, 0,-1 + di),
+                arrayListOf(0,175 + du, 0, -1 + di)
+            )
+            postTransparency =6
+            postTextSize = arrayListOf(0, 15)
+            postBackground = "#1E4174"
+            val textColor = "#DDA94B"
+            postFontFamily =103
+            val col = "#$textColor"
+            postTextColor = arrayListOf(CONSTANT, col)
+            postPadding = arrayListOf(0,5, 0,0)
+            postRadiuas = 15
+        }
+        drawPost.drawPostFire(post, layout)
+        util.sendPostToStringFirestore(post)
+    }
   }
 
