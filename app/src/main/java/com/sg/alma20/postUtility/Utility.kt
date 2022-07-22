@@ -39,7 +39,7 @@ class Utility {
     }
 
     fun retrivePostFromFirestore(snap: DocumentSnapshot?): Post {
-        val postId = snap?.get(POST_ID).toString()
+        val postId = snap?.getLong(POST_ID)!!.toInt()
         val postNum = snap?.getLong(POST_NUM)!!.toInt()
         val lineNum = snap?.getLong(POST_LINE_NUM)!!.toInt()
         val imageUri = snap?.getString(POST_IMAGE_URI).toString()

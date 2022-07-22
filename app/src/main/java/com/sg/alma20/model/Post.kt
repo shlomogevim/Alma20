@@ -3,7 +3,7 @@ package com.sg.alma20.model
 import com.google.firebase.Timestamp
 
 data class Post(
-    var postId:String="",
+    var postId:Int=0,
     var postNum:Int=1,
     var lineNum: Int =1,
     var imageUri:String="",
